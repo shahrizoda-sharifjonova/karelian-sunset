@@ -375,6 +375,138 @@
   height: 100%;
 }
 
+.contacts {
+  padding-top: 5.2083333333vw;
+}
+
+.contacts__title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.3333333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.7291666667vw;
+  color: #000;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contacts__title svg {
+  width: 4.0104166667vw;
+  height: 4.0104166667vw;
+}
+
+.contacts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.7708333333vw;
+}
+
+.contacts__map {
+  width: 42.6041666667vw;
+  height: 30vw;
+  padding-bottom: 1.7708333333vw;
+}
+
+.contacts__map > div,
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contacts__content {
+  margin-right: -12.5vw;
+  width: 43.0729166667vw;
+  height: 31.7708333333vw;
+  padding-top: 4.2708333333vw;
+  padding-right: 12.5vw;
+  padding-bottom: 5.8333333333vw;
+  padding-left: 5.8854166667vw;
+  background: #EAF7FC;
+}
+
+.contacts__subtitle {
+  color: #000;
+  text-align: left;
+  font-size: 0.9375vw;
+  margin-bottom: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
+.contacts__item {
+  border-radius: 0.8333333333vw;
+  background: #FFF;
+  padding: 1.0416666667vw;
+}
+
+.contacts__item + .contacts__subtitle {
+  margin-top: 2.4479166667vw;
+}
+
+.contacts__item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1.0416666667vw;
+}
+
+.contacts__item-row + .contacts__item-row {
+  margin-top: 0.6770833333vw;
+}
+
+.contacts__item-row + .contacts__item-single {
+  margin-top: 0.4166666667vw;
+}
+
+.contacts__item-row svg {
+  width: 1.0416666667vw;
+  min-width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+
+.contacts__item-single {
+  padding-left: 2.0833333333vw;
+}
+
+.contacts__item-single + .contacts__item-row {
+  margin-top: 0.6770833333vw;
+}
+
+.contacts__link {
+  color: #000;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -579,6 +711,110 @@ ul {
   .footer__soc-item {
     width: 9.375vw;
     height: 9.375vw;
+  }
+
+  .contacts {
+    padding-top: 12.5vw;
+  }
+
+  .contacts__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 3.4375vw;
+    margin-bottom: 9.375vw;
+    font-size: 6.25vw;
+  }
+
+  .contacts__title svg {
+    width: 17.8125vw;
+    height: 17.8125vw;
+  }
+
+  .contacts__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 5.625vw;
+  }
+
+  .contacts__map {
+    padding-bottom: 0;
+    border-radius: 4.6875vw;
+    overflow: hidden;
+    width: 87.5vw;
+    height: 61.25vw;
+  }
+
+  .contacts__content {
+    margin-right: 0;
+    margin-left: -4.6875vw;
+    width: 100vw;
+    height: auto;
+    padding-top: 6.875vw;
+    padding-right: 6.25vw;
+    padding-bottom: 9.375vw;
+    padding-left: 6.25vw;
+  }
+
+  .contacts__subtitle {
+    font-size: 5vw;
+    margin-bottom: 2.5vw;
+    text-align: center;
+  }
+
+  .contacts__item {
+    border-radius: 5vw;
+    padding: 6.25vw;
+  }
+
+  .contacts__item + .contacts__subtitle {
+    margin-top: 6.25vw;
+  }
+
+  .contacts__item-row {
+    gap: 3.125vw;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .contacts__item-row + .contacts__item-row {
+    margin-top: 4.0625vw;
+  }
+
+  .contacts__item-row + .contacts__item-single {
+    margin-top: 2.5vw;
+  }
+
+  .contacts__item-row svg {
+    margin-top: 0.9375vw;
+    width: 6.25vw;
+    min-width: 6.25vw;
+    height: 6.25vw;
+  }
+
+  .contacts__item-single {
+    padding-left: 9.375vw;
+  }
+
+  .contacts__item-single + .contacts__item-row {
+    margin-top: 4.0625vw;
+  }
+
+  .contacts__link {
+    font-size: 4.375vw;
   }
 
   .container {
