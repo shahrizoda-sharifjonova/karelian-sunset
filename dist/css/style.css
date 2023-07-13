@@ -1,80 +1,8 @@
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
-  font-weight: 200;
   font-style: normal;
 }
 
@@ -97,16 +25,16 @@
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -127,27 +55,91 @@
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: Rubik;
   font-display: swap;
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../fonts/SegoeUI-regular.woff2") format("woff2"), url("../fonts/SegoeUI-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../fonts/SegoeUI-Bold.woff2") format("woff2"), url("../fonts/SegoeUI-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../fonts/SegoeUI-regular.woff2") format("woff2"), url("../fonts/SegoeUI-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-display: swap;
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
@@ -176,28 +168,257 @@
           align-items: center;
 }
 
+.header .logo {
+  width: 6.25vw;
+}
+
+.header .logo img {
+  width: 100%;
+}
+
 .header__discount {
   color: #FFF;
   font-size: 0.7291666667vw;
   line-height: 120%;
   font-style: normal;
   font-weight: 700;
-  padding-top: 0.1041666667vw;
+  padding-top: 0.15625vw;
   padding-right: 0.6770833333vw;
-  padding-bottom: 0.2604166667vw;
+  padding-bottom: 0.15625vw;
   padding-left: 0.5208333333vw;
   border-radius: 0.2083333333vw;
-  background: #35B8EB;
-  margin-left: 1.7708333333vw;
-}
-
-.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #35B8EB;
+  margin-left: 1.7708333333vw;
+}
+
+.header .menu {
+  position: relative;
+  width: 9.375vw;
+  height: 7.1875vw;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.header .menu-btn {
+  width: 100%;
+  height: 0.9375vw;
+  background: #35B8EB;
+}
+
+.header .menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0.9375vw;
+  background: #35B8EB;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header .menu::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.9375vw;
+  background: #35B8EB;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header .menu.active .menu-btn {
+  display: none;
+}
+
+.header .menu.active::before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header .menu.active::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__content.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  display: none;
+}
+
+.header__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__li:not(:last-of-type) {
+  margin-right: 2.2395833333vw;
+}
+
+.header__li.last {
+  font-weight: 600;
+  color: #35B8EB;
+  font-size: 0.8333333333vw;
+}
+
+.header__li.last.tac {
+  display: none;
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link {
+  color: #FFF;
+  font-family: "Rubik";
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.header__link.btn:nth-of-type(1) {
+  margin-right: 0.625vw;
+}
+
+.header__link.btn:nth-of-type(2) {
+  margin-left: 0.625vw;
+}
+
+.header__dropdown {
+  position: relative;
+  margin-right: 2.2395833333vw;
+}
+
+.header__dropdown-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFF;
+  font-family: "Rubik";
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625vw;
+}
+
+.header__dropdown-btn svg {
+  width: 0.5208333333vw;
+  height: 0.9375vw;
+  margin-left: 0.625vw;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header__dropdown-btn.active svg {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.header__dropdown-content {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  left: -0.625vw;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header__dropdown-content.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__dropdown-p {
+  padding-top: 0.2604166667vw;
+  padding-right: 0.625vw;
+  padding-bottom: 0.2604166667vw;
+  padding-left: 0.625vw;
+  border-radius: 0.2083333333vw;
+  color: #1c1c1c;
+  font-family: "Rubik";
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  background: #fff;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.header__dropdown-p:hover {
+  background: #eeeeee;
+}
+
+.header__a {
+  color: #000;
+  font-family: "Rubik";
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 * {
@@ -217,6 +438,10 @@
 html,
 body {
   height: 100%;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -251,46 +476,119 @@ button {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 576px) {
   .container {
-    max-width: 95.8333333333vw;
-    padding-right: 4.1666666667vw;
-    padding-left: 4.1666666667vw;
+    max-width: 107.8125vw;
+    padding-right: 4.6875vw;
+    padding-left: 4.6875vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding-top: 6.25vw;
+  }
+
+  .header .logo {
+    width: 26.25vw;
+  }
+
+  .header__discount {
+    font-size: 3.125vw;
+    padding-top: 0.625vw;
+    padding-right: 3.4375vw;
+    padding-bottom: 0.625vw;
+    padding-left: 3.4375vw;
+    border-radius: 1.25vw;
+  }
+
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__content {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background: #FFF;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    transition: 300ms ease;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 6.25vw;
+    padding-right: 5vw;
+    padding-bottom: 6.25vw;
+    padding-left: 5vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__li:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 7.5vw;
+  }
+
+  .header__li.disable {
+    display: none;
+  }
+
+  .header__li.last {
+    font-size: 5vw;
+  }
+
+  .header__li.last.tac {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__link {
+    color: #000;
+    display: none;
+    font-size: 5vw;
+  }
+
+  .header__link.btn {
+    display: block;
+  }
+
+  .header__link.btn:nth-of-type(1) {
+    margin-right: 5.3125vw;
+  }
+
+  .header__link.btn:nth-of-type(2) {
+    margin-left: 5.3125vw;
+  }
+
+  .header__dropdown {
+    display: none;
   }
 }
