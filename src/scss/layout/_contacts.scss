@@ -48,7 +48,7 @@
     &__map{
         @include res('width', 818px);
         @include res('height', 576px);
-        @include res('padding-bottom', 34px);
+        // @include res('padding-bottom', 34px);
         @include media(576){
             padding-bottom: 0;
             @include resa('border-radius', 15px);
@@ -63,7 +63,7 @@
         }
     }
     &__content{
-        @include res('margin-right', -240px);
+        @include res('margin-right', -230px);
         @include res('width', 827px);
         @include res('height', 610px);
         @include res('padding-top', 82px);
