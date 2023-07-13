@@ -1,1 +1,266 @@
-// Футер
+.footer{
+    background: #EAF7FC;
+    @include res('padding-top', 30px);
+    @include res('padding-bottom', 30px);
+    @include media(576){
+        @include resa('padding-top', 35px);
+        @include resa('padding-bottom', 35px);
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include media(576){
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            @include resa('gap', 25px);
+        }
+    }
+    &__left{
+        @include media(576){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__logo{
+        @include res('width', 121px);
+        @include res('height', 35px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        @include res('margin-bottom', 38px);
+        @include media(576){
+            @include resa('width', 121px);
+            @include resa('height', 35px);
+            @include resa('margin-bottom', 38px);
+        }
+        svg,img{
+            width: 100%;
+            height: 100%;
+            line-height: 0;
+        }
+    }
+    &__p{
+        color: #35B8EB;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 178%;
+        @include res('margin-bottom', 14px);
+        @include media(576){
+            @include resa('font-size', 14px);
+            text-align: center;
+            @include resa('margin-bottom', 10px);
+        }
+    }
+    &__payment{
+        background: #fff;
+        @include res('border-radius', 10px);
+        @include res('padding-top', 16px);
+        @include res('padding-bottom', 10px);
+        @include res('padding-right', 29px);
+        @include res('padding-left', 18px);
+        @include res('margin-bottom', 8px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(576){
+            @include resa('border-radius', 10px);
+            @include resa('padding-top', 14px);
+            @include resa('padding-bottom', 10px);
+            @include resa('padding-right', 26px);
+            @include resa('padding-left', 16px);
+            @include resa('margin-bottom', 9px);
+        }
+        svg{
+            @include res('width', 256px);
+            @include res('height', 40px);
+            @include media(576){
+                @include resa('width', 235px);
+                @include resa('height', 36px);
+            }
+        }
+    }
+    &__desc{
+        color: #000;
+        @include res('font-size', 14px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 28px);
+        @include media(576){
+            color: #000;
+            @include resa('font-size', 14px);
+            font-style: normal;
+            font-weight: 400;
+            @include resa('line-height', 28px);
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include media(576){
+            align-items: center;
+        }
+    }
+    &__title{
+        color: #35B8EB;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 600;
+        @include res('line-height', 28px);
+        @include res('margin-bottom', 10px);
+        @include media(576){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 28px);
+            @include resa('margin-bottom', 10px);
+        }
+    }
+    &__link{
+        color: #000;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 28px);
+        text-decoration: none;
+        @include media(576){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 28px);
+        }
+        &+.footer__link{
+            @include res('margin-top', 5px);
+            @include media(576){
+                @include resa('margin-top', 5px);
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        @include media(576){
+            align-items: center;
+        }
+    }
+    &__tel{
+        color: #000;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 10px);
+        @include res('margin-bottom', 27px);
+        text-decoration: none;
+        @include media(576){
+            @include resa('font-size', 16px);
+            @include resa('gap', 10px);
+            @include resa('margin-bottom', 13px);
+        }
+        svg{
+            @include res('width', 20px);
+            @include res('height', 20px);
+            @include media(576){
+                @include resa('width', 20px);
+                @include resa('height', 20px);
+            }
+        }
+    }
+    &__order{
+        background: #35B8EB;
+        @include res('width', 304px);
+        @include res('height', 42px);
+        color: #FFF;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        @include res('border-radius', 30px);
+        @include res('line-height', 21px);
+        @include res('margin-bottom', 14px);
+        @include media(576){
+            @include resa('width', 280px);
+            @include resa('height', 40px);
+            @include resa('font-size', 16px);
+            @include resa('border-radius', 30px);
+            @include resa('line-height', 21px);
+            @include resa('margin-bottom', 8px);
+        }
+    }
+    &__whatsapp{
+        @include res('border-radius', 30px);
+        @include res('width', 304px);
+        @include res('height', 42px);
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        @include res('gap', 13px);
+        color: #35B8EB;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        border: solid #35B8EB;
+        @include res('border-width', 1px);
+        @include res('line-height', 21px);
+        @include res('margin-bottom', 27px);
+        @include media(576){
+            @include resa('width', 280px);
+            @include resa('height', 40px);
+            @include resa('font-size', 16px);
+            @include resa('border-radius', 30px);
+            @include resa('line-height', 21px);
+            @include resa('margin-bottom', 20px);
+            @include resa('gap', 10px);
+        }
+        svg{
+            @include res('width', 24px);
+            @include res('height', 24px);
+            @include media(576){
+                @include resa('width', 24px);
+                @include resa('height', 24px);
+            }
+
+        }
+    }
+    &__soc{
+        @include res('border-radius', 10px);
+        @include res('padding-top', 18px);
+        @include res('padding-bottom', 18px);
+        @include res('padding-right', 25px);
+        @include res('padding-left', 25px);
+        @include res('gap', 25px);
+        background: #FFF;
+        display: flex;
+        justify-content: flex-start;
+        @include media(576){
+            @include resa('border-radius', 10px);
+            @include resa('padding-top', 18px);
+            @include resa('padding-bottom', 18px);
+            @include resa('padding-right', 25px);
+            @include resa('padding-left', 25px);
+            @include resa('gap', 25px);
+            align-items: center;
+            justify-content: center;
+        }
+        &-item{
+            @include res('width', 30px);
+            @include res('height', 30px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media(576){
+                @include resa('width', 30px);
+                @include resa('height', 30px);
+            }
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
