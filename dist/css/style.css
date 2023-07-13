@@ -142,12 +142,237 @@
   font-style: normal;
 }
 
-.container {
+.footer {
+  background: #EAF7FC;
+  padding-top: 1.5625vw;
+  padding-bottom: 1.5625vw;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__logo {
+  width: 6.3020833333vw;
+  height: 1.8229166667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 0;
+  margin-bottom: 1.9791666667vw;
+}
+
+.footer__logo svg,
+.footer__logo img {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 100%;
+  line-height: 0;
+}
+
+.footer__p {
+  color: #35B8EB;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 178%;
+  margin-bottom: 0.7291666667vw;
+}
+
+.footer__payment {
+  background: #fff;
+  border-radius: 0.5208333333vw;
+  padding-top: 0.8333333333vw;
+  padding-bottom: 0.5208333333vw;
+  padding-right: 1.5104166667vw;
+  padding-left: 0.9375vw;
+  margin-bottom: 0.4166666667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__payment svg {
+  width: 13.3333333333vw;
+  height: 2.0833333333vw;
+}
+
+.footer__desc {
+  color: #000;
+  font-size: 0.7291666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__title {
+  color: #35B8EB;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4583333333vw;
+  margin-bottom: 0.5208333333vw;
+}
+
+.footer__link {
+  color: #000;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+  text-decoration: none;
+}
+
+.footer__link + .footer__link {
+  margin-top: 0.2604166667vw;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__tel {
+  color: #000;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.5208333333vw;
+  margin-bottom: 1.40625vw;
+  text-decoration: none;
+}
+
+.footer__tel svg {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+
+.footer__order {
+  background: #35B8EB;
+  width: 15.8333333333vw;
+  height: 2.1875vw;
+  color: #FFF;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 1.5625vw;
+  line-height: 1.09375vw;
+  margin-bottom: 0.7291666667vw;
+}
+
+.footer__whatsapp {
+  border-radius: 1.5625vw;
+  width: 15.8333333333vw;
+  height: 2.1875vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.6770833333vw;
+  color: #35B8EB;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  border: solid #35B8EB;
+  border-width: 0.0520833333vw;
+  line-height: 1.09375vw;
+  margin-bottom: 1.40625vw;
+}
+
+.footer__whatsapp svg {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+
+.footer__soc {
+  border-radius: 0.5208333333vw;
+  padding-top: 0.9375vw;
+  padding-bottom: 0.9375vw;
+  padding-right: 1.3020833333vw;
+  padding-left: 1.3020833333vw;
+  gap: 1.3020833333vw;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__soc-item {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__soc-item svg {
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -207,37 +432,155 @@ ul {
   list-style-type: none;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
 @media (max-width: 576px) {
+  .footer {
+    padding-top: 10.9375vw;
+    padding-bottom: 10.9375vw;
+  }
+
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 7.8125vw;
+  }
+
+  .footer__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__logo {
+    width: 37.8125vw;
+    height: 10.9375vw;
+    margin-bottom: 11.875vw;
+  }
+
+  .footer__p {
+    font-size: 4.375vw;
+    text-align: center;
+    margin-bottom: 3.125vw;
+  }
+
+  .footer__payment {
+    border-radius: 3.125vw;
+    padding-top: 4.375vw;
+    padding-bottom: 3.125vw;
+    padding-right: 8.125vw;
+    padding-left: 5vw;
+    margin-bottom: 2.8125vw;
+  }
+
+  .footer__payment svg {
+    width: 73.4375vw;
+    height: 11.25vw;
+  }
+
+  .footer__desc {
+    color: #000;
+    font-size: 4.375vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8.75vw;
+  }
+
+  .footer__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__title {
+    font-size: 5vw;
+    line-height: 8.75vw;
+    margin-bottom: 3.125vw;
+  }
+
+  .footer__link {
+    font-size: 5vw;
+    line-height: 8.75vw;
+  }
+
+  .footer__link + .footer__link {
+    margin-top: 1.5625vw;
+  }
+
+  .footer__right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__tel {
+    font-size: 5vw;
+    gap: 3.125vw;
+    margin-bottom: 4.0625vw;
+  }
+
+  .footer__tel svg {
+    width: 6.25vw;
+    height: 6.25vw;
+  }
+
+  .footer__order {
+    width: 87.5vw;
+    height: 12.5vw;
+    font-size: 5vw;
+    border-radius: 9.375vw;
+    line-height: 6.5625vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .footer__whatsapp {
+    width: 87.5vw;
+    height: 12.5vw;
+    font-size: 5vw;
+    border-radius: 9.375vw;
+    line-height: 6.5625vw;
+    margin-bottom: 6.25vw;
+    gap: 3.125vw;
+  }
+
+  .footer__whatsapp svg {
+    width: 7.5vw;
+    height: 7.5vw;
+  }
+
+  .footer__soc {
+    border-radius: 3.125vw;
+    padding-top: 5.625vw;
+    padding-bottom: 5.625vw;
+    padding-right: 7.8125vw;
+    padding-left: 7.8125vw;
+    gap: 7.8125vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__soc-item {
+    width: 9.375vw;
+    height: 9.375vw;
+  }
+
   .container {
     max-width: 107.8125vw;
     padding-right: 4.6875vw;
