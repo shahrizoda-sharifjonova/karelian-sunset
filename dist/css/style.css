@@ -1436,6 +1436,10 @@
           flex-direction: row-reverse;
 }
 
+.features__row:nth-of-type(even) .features__left {
+  border-radius: 0 2.083vw 2.083vw 0;
+}
+
 .features__left {
   padding-top: 1.875vw;
   padding-right: 2.0833333333vw;
@@ -1443,6 +1447,30 @@
   padding-left: 2.0833333333vw;
   border-radius: 2.083vw 0 0 2.083vw;
   background: #EAF7FC;
+}
+
+.features__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.features__subtitle svg {
+  margin-right: 0.9895833333vw;
+}
+
+.features__image {
+  width: 27.1875vw;
+  min-width: 27.1875vw;
+  border-radius: 2.0833333333vw;
+  overflow: hidden;
+}
+
+.features__image img {
+  width: 100%;
 }
 
 * {
