@@ -2613,6 +2613,11 @@
   line-height: 0;
 }
 
+.promotion {
+  padding-top: 5.2083333333vw;
+  padding-bottom: 4.6875vw;
+}
+
 * {
   margin: 0;
   padding: 0;

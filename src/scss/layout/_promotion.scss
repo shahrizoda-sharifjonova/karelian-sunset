@@ -1,0 +1,4 @@
+.promotion{
+    @include res('padding-top', 100px);
+    @include res('padding-bottom', 90px);
+}
