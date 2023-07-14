@@ -1,0 +1,369 @@
+.options{
+    @include res('padding-top', 117px);
+    @include media(575){
+        @include resa('padding-top', 30px);
+    }
+    &__title{
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        text-align: center;
+        @include res('margin-bottom', 85px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            line-height: 140%;
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    &__item{
+        width: calc(33.333% - 0.729vw);
+        @include media(575){
+            width: 100%;
+        }
+        &:not(:last-of-type){
+            @include media(575){
+                @include resa('margin-bottom', 30px);
+            }
+        }
+    }
+    &__card{
+        width: 100%;
+        @include res('border-radius', 20px);
+        background: #EAF7FC;
+        @include res('padding-top', 15px);
+        @include res('padding-right', 17px);
+        @include res('padding-left', 17px);
+        @include res('padding-bottom', 28px);
+        @include res('margin-bottom', 32px);
+        @include media(575){
+            @include resa('border-radius', 15px);
+            @include resa('padding-top', 17px);
+            @include resa('padding-right', 10px);
+            @include resa('padding-left', 10px);
+            @include resa('padding-bottom', 17px);
+            @include resa('margin-bottom', 17px);
+        }
+    }
+    &__slider{
+        width: 100%;
+        position: relative;
+        @include media(575){
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .swiper{
+        width: 100%;
+        overflow: hidden;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-slide{
+            width: max-content;
+        }
+    }
+    &__img{
+        @include res('border-radius', 20px);
+        overflow: hidden;
+        width: 100%;
+        @include media(575){
+            @include resa('border-radius', 15px);
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__btns{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res('padding-right',20px);
+        @include res('padding-left', 20px);
+        z-index: 1;
+        pointer-events: none;
+        @include media(575){
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &__btn{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('width', 39px);
+        @include res('height', 39px);
+        border-radius: 50%;
+        background: #FFF;
+        box-shadow: 0px 0px 0.313vw 0px rgba(0, 0, 0, 0.25);
+        pointer-events: all;
+        @include media(575){
+            @include resa('width', 27px);
+            @include resa('height', 27px);
+            transform: translateX(-2.5vw);
+            box-shadow: 0px 0px 1.875vw 0px rgba(0, 0, 0, 0.25);
+        }
+        img{
+            @include res('width', 10px);
+            @include res('height', 18px);
+            @include media(575){
+                @include resa('width', 7px);
+                @include resa('height', 13px);
+            }
+        }
+        &-next{
+            @include media(575){
+                transform: translateX(2.5vw);
+            }
+            img{
+                display: block;
+                @include res('margin-right', -4px);
+            }
+        }
+    }
+    &__bottom{
+        @include res('margin-top', 32px);
+        @include media(575){
+            @include resa('margin-top', 8px);
+        }
+    }
+    &__line{
+        display: flex;
+        align-items: center;
+        @include res('margin-bottom', 19px);
+        justify-content: space-between;
+        @include media(575){
+            @include resa('margin-bottom', 17px);
+        }
+        &:first-of-type{
+            @include media(575){
+                flex-direction: column;
+                @include resa('margin-bottom', 9px);
+            }
+        }
+    }
+    &__subtitle{
+        color: #000;
+        @include res('font-size', 24px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        @include media(575){
+            @include resa('font-size', 20px);
+            @include resa('line-height', 29px);
+        }
+    }
+    &__date{
+        color: #000;
+        @include res('font-size', 18px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 14px);
+        }
+        &.disable-sm{
+            @include media(575){
+                display: none;
+            }
+        }
+        &.enable-sm{
+            display: none;
+            @include media(575){
+                display: block;
+            }
+        }
+    }
+    &__txts{
+        display: flex;
+        align-items: center;
+        &.disable-sm{
+            @include media(575){
+                display: none;
+            }
+        }
+        &.enable-sm{
+            display: none;
+            @include media(575){
+                display: flex;
+            }
+        }
+    }
+    &__txt{
+        @include res('margin-right', 12px);
+        color: #818181;
+        @include res('font-size', 16px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('margin-right', 12px);
+            @include resa('font-size', 14px);
+            @include resa('line-height', 29px);
+        }
+    }
+    &__li{
+        color: #818181;
+        @include res('font-size', 16px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 29px);
+        }
+    }
+    &__desc{
+        color: #35B8EB;
+        @include res('font-size', 14px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 500;
+        @include res('max-width', 152px);
+        width: 100%;
+        background: #FFF;
+        @include res('padding-top', 5px);
+        @include res('padding-right', 9px);
+        @include res('padding-bottom', 5px);
+        @include res('padding-left', 16px);
+        position: relative;
+        @include res('margin-right', -17px);
+        @include media(575){
+            @include resa('max-width', 152px);
+            @include resa('font-size', 14px);
+            @include resa('margin-right', -10px);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            @include res('width', 2px);
+            height: 100%;
+            left: 0;
+            background: #35B8EB;
+            top: 0;
+        }
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-of-type){
+            @include res('margin-bottom', 8px);
+            @include media(575){
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__info{
+        color: #000;
+        @include res('font-size', 20px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 28.5px);
+        }
+    }
+    &__price{
+        color: #35B8EB;
+        @include res('font-size', 20px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 700;
+        @include media(575){
+            @include resa('font-size', 16px);
+            @include resa('line-height', 28.5px);
+        }
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    &__button{
+        color: #FFF;
+        @include res('font-size', 18px);
+        line-height: 120%;
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('padding-top', 15px);
+        @include res('padding-bottom', 15px);
+        @include res('border-radius', 30px);
+        background: #35B8EB;
+        transition: 300ms ease;
+        @include res('margin-bottom', 8px);
+        @include res('height', 51px);
+        @include media(575){
+            @include resa('padding-top', 15px);
+            @include resa('padding-bottom', 15px);
+            @include resa('border-radius', 30px);
+            @include resa('font-size', 14px);
+            @include resa('height', 39px);
+            @include resa('margin-bottom', 8px);
+        }
+        &:hover{
+            background: #70D6FE;
+        }
+        &:active{
+            background: #0DA5E0;
+        }
+    }
+    &__link{
+        color: #35B8EB;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('padding-top', 15px);
+        @include res('padding-bottom', 15px);
+        @include res('border-radius', 30px);
+        border: solid #35B8EB;
+        @include res('border-width', 2px);
+        @include res('height', 51px);
+        transition: 300ms ease;
+        @include media(575){
+            @include resa('padding-top', 15px);
+            @include resa('padding-bottom', 15px);
+            @include resa('border-radius', 30px);
+            @include resa('font-size', 14px);
+            @include resa('height', 39px);
+        }
+        &:hover{
+            background: #70D6FE;
+            color: #fff;
+            border: solid #70D6FE;
+        }
+        &:active{
+            background: #0DA5E0;
+            color: #fff;
+            border: solid #0DA5E0;
+        }
+    }
+}
