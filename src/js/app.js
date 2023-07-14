@@ -7,6 +7,24 @@ functions.isWebp();
 
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+$(document).ready(function() {
+    $(".faq__acc > .faq__acc-button").on("click", function() {
+        if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(this)
+                    .siblings(".faq__acc-content")
+                    .slideUp(200);
+        } else {
+            $(".faq__acc > .faq__acc-button").removeClass("active");
+            $(this).addClass("active");
+            $(".faq__acc-content").slideUp(200);
+            $(this)
+                .siblings(".faq__acc-content")
+                .slideDown(200);
+        }
+    });
+});
+
 
 new Swiper(".intro__swiper", {
     grabCursor: true,

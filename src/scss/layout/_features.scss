@@ -70,12 +70,14 @@
             border-radius: 0 0 4.688vw 4.688vw;
         }
         &.active{
-            .features__desc{
-                display: block;
-            }
-            .features__subtitle{
-                svg{
-                    transform: rotate(-180deg);
+            @include media(576){
+                .features__desc{
+                    display: block;
+                }
+                .features__subtitle{
+                    svg{
+                        transform: rotate(-180deg);
+                    }
                 }
             }
         }

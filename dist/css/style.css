@@ -1733,16 +1733,6 @@
   width: 100%;
 }
 
-.features__left.active .features__desc {
-  display: block;
-}
-
-.features__left.active .features__subtitle svg {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
 .features__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1938,6 +1928,7 @@
   border-radius: 1.0416666667vw;
   overflow: hidden;
   width: 100%;
+  line-height: 0;
 }
 
 .options__img img {
@@ -2802,6 +2793,16 @@ ul {
 
   .tabs__tel {
     display: none;
+  }
+
+  .features__left.active .features__desc {
+    display: block;
+  }
+
+  .features__left.active .features__subtitle svg {
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
 
   .container {
