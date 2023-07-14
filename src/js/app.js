@@ -4,8 +4,6 @@ functions.isWebp();
 
 import Swiper, { Navigation, Pagination } from 'swiper';
 
-const swiper = new Swiper();
-
 new Swiper(".intro__swiper", {
     grabCursor: true,
     modules: [Navigation,Pagination],
@@ -45,3 +43,43 @@ menu.addEventListener('click', (e)=>{
     list.classList.toggle('active')
     body.classList.toggle('active')
 })
+
+new Swiper(".tabs__item-swiper", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 0,
+    watchSlidesProgress: true,
+    // navigation:{
+    //     prevEl: '.intro__btn-prev',
+    //     nextEl: '.intro__btn-next',
+    // },
+    // breakpoints:{
+    //     992:{
+    //         slidesPerView: 4,
+    //         spaceBetween: 22,
+    //     },
+    //     577:{
+    //         slidesPerView: 4,
+    //     }
+    // }
+}); 
+
+if(document.querySelector('.tabs')){
+    const buttons = document.querySelectorAll('.tabs__btn')
+    const items = document.querySelectorAll('.tabs__item')
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(btn => {
+                btn.classList.remove('active')
+            })
+            btn.classList.add('active')
+            const target = btn.getAttribute('data-target')
+            const el = document.querySelector(`#${target}`)
+            items.forEach(item => {
+                item.classList.remove('active')
+            })
+            el.classList.add('active')
+        })
+    })
+}

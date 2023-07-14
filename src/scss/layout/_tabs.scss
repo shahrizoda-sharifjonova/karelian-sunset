@@ -1,5 +1,18 @@
 .tabs{
     @include res('padding-top', 100px);
+    background: url('../img/tabs-bg.png') center / cover no-repeat;
+    @include res('padding-bottom', 54px);
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        @include res('bottom', 0px);
+        left: 0;
+        @include res('height', 100px);
+        background: linear-gradient(360deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        width: 100%;
+        pointer-events: none;
+    }
     &__top{
         display: flex;
         justify-content: space-between;
@@ -12,6 +25,16 @@
         @include res('padding-right', 13px);
         background: rgba(234, 247, 252, 0.85);
         border-radius: 1.0833333333vw 1.0833333333vw 0 0;
+    }
+    &__title{
+        @include res('margin-bottom', 45px);
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
     }
     &__btn{
         color: #8E8E8E;
@@ -33,6 +56,10 @@
         @include res('padding-right', 30px);
         cursor: pointer;
         @include res('border-radius', 10px);
+        svg{
+            @include res('width', 52px);
+            @include res('height', 38px);
+        }
         &.active{
             background: #fff;
             color: #35B8EB;
@@ -56,10 +83,101 @@
             fill: #8E8E8E;
         }
     }
+    &__content{
+        @include res('border-radius', 40px);
+        background: rgba(234, 247, 252, 0.85);        
+        @include res('padding-top', 73px);
+        @include res('padding-bottom', 21px);
+        @include res('padding-left', 50px);
+        @include res('padding-right', 117px);
+    }
     &__item{
         display: none;
+        align-items: center;
+        justify-content: space-between;
+        @include res('gap', 70px);
+        @include res('margin-bottom', 27px);
         &.active{
             display: flex;
+        }
+        &-slider{
+            @include res('width', 647px);
+            @include res('height', 472px);
+        }
+        &-swiper{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            @include res('border-radius', 15px);
+        }
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-slide{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-title{
+            color: #000;
+            @include res('font-size', 26px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            @include res('margin-bottom', 20px);
+        }
+        &-p{
+            color: #000;
+            @include res('font-size', 20px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 28px);
+            @include res('margin-bottom', 40px);
+        }
+        &-sep{
+            display: block;
+            border-top: solid #35B8EB;
+            border-bottom: solid #35B8EB;
+            @include res('border-width', 1px);
+            @include res('width', 140px);
+            @include res('margin-bottom', 40px);
+        }
+        &-info{
+            color: #000;
+            @include res('font-size', 20px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 28px);
+            &+.tabs__item-info{
+                @include res('margin-top', 7px);
+            }
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    &__tel{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 11px);
+        color: #000;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 28px);
+        button{
+            color: #35B8EB;
+            @include res('font-size', 16px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 28px);
+        }
+        svg{
+            @include res('width', 29px);
+            @include res('height', 26px);
         }
     }
 }

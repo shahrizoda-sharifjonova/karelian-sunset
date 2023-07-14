@@ -1085,8 +1085,26 @@
   text-decoration: none;
 }
 
+.no-webp .tabs {
+  background: url("../img/tabs-bg.png") center/cover no-repeat; }
+
 .tabs {
   padding-top: 5.2083333333vw;
+  padding-bottom: 2.8125vw;
+  position: relative;
+}
+
+.tabs::before {
+  content: "";
+  position: absolute;
+  bottom: 0vw;
+  left: 0;
+  height: 5.2083333333vw;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFF), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, #FFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(360deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  pointer-events: none;
 }
 
 .tabs__top {
@@ -1105,6 +1123,17 @@
   padding-right: 0.6770833333vw;
   background: rgba(234, 247, 252, 0.85);
   border-radius: 1.0833333333vw 1.0833333333vw 0 0;
+}
+
+.tabs__title {
+  margin-bottom: 2.34375vw;
+  color: #000;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.09375vw;
+  text-transform: uppercase;
 }
 
 .tabs__btn {
@@ -1140,6 +1169,11 @@
   border-radius: 0.5208333333vw;
 }
 
+.tabs__btn svg {
+  width: 2.7083333333vw;
+  height: 1.9791666667vw;
+}
+
 .tabs__btn.active {
   background: #fff;
   color: #35B8EB;
@@ -1170,14 +1204,131 @@
   fill: #8E8E8E;
 }
 
+.tabs__content {
+  border-radius: 2.0833333333vw;
+  background: rgba(234, 247, 252, 0.85);
+  padding-top: 3.8020833333vw;
+  padding-bottom: 1.09375vw;
+  padding-left: 2.6041666667vw;
+  padding-right: 6.09375vw;
+}
+
 .tabs__item {
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3.6458333333vw;
+  margin-bottom: 1.40625vw;
 }
 
 .tabs__item.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.tabs__item-slider {
+  width: 33.6979166667vw;
+  height: 24.5833333333vw;
+}
+
+.tabs__item-swiper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.78125vw;
+}
+
+.tabs__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.tabs__item-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.tabs__item-title {
+  color: #000;
+  font-size: 1.3541666667vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 1.0416666667vw;
+}
+
+.tabs__item-p {
+  color: #000;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+  margin-bottom: 2.0833333333vw;
+}
+
+.tabs__item-sep {
+  display: block;
+  border-top: solid #35B8EB;
+  border-bottom: solid #35B8EB;
+  border-width: 0.0520833333vw;
+  width: 7.2916666667vw;
+  margin-bottom: 2.0833333333vw;
+}
+
+.tabs__item-info {
+  color: #000;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+}
+
+.tabs__item-info + .tabs__item-info {
+  margin-top: 0.3645833333vw;
+}
+
+.tabs__item-info span {
+  font-weight: 600;
+}
+
+.tabs__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.5729166667vw;
+  color: #000;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4583333333vw;
+}
+
+.tabs__tel button {
+  color: #35B8EB;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+}
+
+.tabs__tel svg {
+  width: 1.5104166667vw;
+  height: 1.3541666667vw;
 }
 
 * {
@@ -1745,3 +1896,5 @@ ul {
 }
 
 .webp .intro { background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0))), url(../img/intro-bg.webp) center/cover no-repeat; background: -o-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%), url(../img/intro-bg.webp) center/cover no-repeat; background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 100%), url(../img/intro-bg.webp) center/cover no-repeat; }
+
+.webp .tabs { background: url(../img/tabs-bg.webp) center/cover no-repeat; }
