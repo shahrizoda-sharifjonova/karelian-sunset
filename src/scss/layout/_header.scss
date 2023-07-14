@@ -17,6 +17,9 @@
     .logo{
         @include res('width', 120px);
         @include res('height', 35px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include media(575){
             @include resa('width', 84px);
             @include resa('height', 25px);

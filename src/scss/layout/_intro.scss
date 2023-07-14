@@ -9,7 +9,7 @@
     @include media(576){
         @include resa('margin-top', -50px);
         @include resa('padding-top', 130px);
-        margin-bottom: 0;
+        @include resa('margin-bottom', 80px);
     }
     &__items{
         display: flex;
@@ -173,14 +173,14 @@
     &__slider{
         width: 100%;
         position: relative;
-        transform: translateY(10.667vw);
+        transform: translateY(50%);
         @include media(576){
-            transform: translateY(0.625vw);
+            transform: translateY(20.313vw);
         }
     }
     .swiper{
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         @include res('max-width', 1353px);
         @include res('padding-left', 2px);
         @include res('padding-right', 2px);
@@ -248,14 +248,13 @@
         width: calc(100% + 4.479vw);
         position: absolute;
         @include res('margin-left', -43px);
-        @include res('top', 11px);
+        top: 50%;
+        transform: translateY(-50%);
         pointer-events: none;
         z-index: 1;
         @include media(576){
             width: 100%;
             margin-left: 0;
-            top: 50%;
-            transform: translateY(-50%);
         }
     }
     &__btn{
@@ -269,7 +268,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            transition: 300ms ease;
+            transition: background 300ms ease;
             @include media(576){
                 @include resa('width', 33px);
                 @include resa('height', 33px);
@@ -294,7 +293,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            transition: 300ms ease;
+            transition: background 300ms ease;
             @include media(576){
                 @include resa('width', 33px);
                 @include resa('height', 33px);
