@@ -1,5 +1,4 @@
 .guests{
-    @include res('padding-bottom', 100px);
     @include media(575){
         @include resa('padding-top', 15px);
     }
