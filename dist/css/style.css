@@ -2678,6 +2678,10 @@
   margin-right: auto;
 }
 
+.promotion__subtitle span {
+  color: #35B8EB;
+}
+
 .promotion__p {
   color: #000;
   text-align: center;
