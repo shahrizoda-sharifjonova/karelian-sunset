@@ -83,6 +83,18 @@ new Swiper(".options__swiper3", {
     },
 }); 
 
+new Swiper(".services__swiper", { 
+    grabCursor: true,
+    modules: [Pagination],
+    slidesPerView: 1,
+    spaceBetween: 15,
+    watchSlidesProgress: true,
+    pagination:{
+        el: '.services__pagination',
+        clickable: true,
+    },
+}); 
+
 const dropdown = document.querySelector('.header__dropdown');
 const btn = document.querySelector('.header__dropdown-btn');
 const content = document.querySelector('.header__dropdown-content');
