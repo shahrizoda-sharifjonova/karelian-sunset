@@ -1,0 +1,222 @@
+.promotion{
+    @include res('padding-top', 100px);
+    @include res('padding-bottom', 90px);
+    background: linear-gradient(180deg, rgba(53, 184, 235, 0.80) 0%, rgba(254, 253, 251, 0.80) 100%);
+    @include media(576){
+        @include resa('padding-top', 24px);
+        @include resa('padding-bottom', 133px);
+    }
+    &__title{
+        color: #FFF;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        @include res('margin-bottom', 80px);
+        text-align: center;
+        @include media(576){
+            @include resa('font-size', 20px);
+            @include resa('line-height', 21px);
+            @include resa('margin-bottom', 97px);
+        }
+    }
+    &__content{
+        @include res('border-radius', 80px);
+        background: #FFF;
+        @include res('padding-top', 56px);
+        @include res('padding-bottom', 50px);
+        @include res('padding-right', 50px);
+        @include res('padding-left', 50px);
+        position: relative;
+        @include media(576){
+            @include resa('border-radius', 15px);
+            @include resa('padding-top', 66px);
+            @include resa('padding-bottom', 100px);
+            @include resa('padding-right', 25px);
+            @include resa('padding-left', 25px);
+            @include resa('max-width', 280px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__subtitle{
+        color: #000;
+        text-align: center;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 43px);
+        text-transform: uppercase;
+        @include res('margin-bottom', 36px);
+        @include res('max-width', 764px);
+        margin-left: auto;
+        margin-right: auto;
+        span{
+            color: #35B8EB;
+        }
+        @include media(576){
+            @include resa('font-size', 20px);
+            @include resa('line-height', 24px);
+            @include resa('margin-bottom', 20px);
+            max-width: 100%;
+        }
+    }
+    &__p{
+        color: #000;
+        text-align: center;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 600;
+        @include res('line-height', 28px);
+        @include res('max-width', 718px);
+        @include res('margin-bottom', 36px);
+        margin-left: auto;
+        margin-right: auto;
+        @include media(576){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 26px);
+            max-width: 100%;
+            @include resa('margin-bottom', 30px);
+        }
+    }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        @include res('width', 460px);
+        @include res('height', 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        background: #35B8EB;
+        color: #FFF;
+        @include res('font-size', 18px);
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 21px);
+        transition: 300ms ease-out;
+        @include media(576){
+            width: 100%;
+            @include resa('height', 40px);
+            @include resa('font-size', 14px);
+            @include resa('line-height', 21px);
+        }
+        &:hover{
+            background: #70D6FE;
+        }
+        &:active{
+            background: #0DA5E0;
+        }
+    }
+    &__cam{
+        position: absolute;
+        @include res('top', -128px);
+        @include res('left', -122px);
+        @include res('width', 246px);
+        @include res('height', 285px);
+        @include media(576){
+            @include resa('top', -73px);
+            @include resa('left', -20px);
+            @include resa('width', 156px);
+            @include resa('height', 146px);
+        }
+        img,svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__coin{
+        position: absolute;
+        @include res('top', 104px);
+        @include res('right', -80px);
+        @include res('width', 181px);
+        @include res('height', 181px);
+        @include media(576){
+            @include resa('top', -70px);
+            @include resa('right', -20px);
+            @include resa('width', 128px);
+            @include resa('height', 128px);
+        }
+        svg,img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__video{
+        &_1{
+            position: absolute;
+            @include res('right', 22px);
+            @include res('bottom', -147px);
+            @include res('border-radius', 30px);
+            @include res('width', 223px);
+            @include res('height', 189px);
+            box-shadow: 0px .625vw .9375vw 0px rgba(0, 0, 0, 0.15);
+            line-height: 0;
+            overflow: hidden;
+            z-index: 1;
+            transform: rotate(-9deg);
+            @include media(576){
+                right: auto;
+                @include resa('left', 7px);
+                @include resa('bottom', -109px);
+                @include resa('border-radius', 30px);
+                @include resa('width', 144px);
+                @include resa('height', 141px);
+                @include resa('border-radius', 15px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                line-height: 0;
+            }
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include res('width', 29.4px);
+                @include res('height', 33.6px);
+                transform: translate(-50%, -50%);
+                @include media(576){
+                    @include resa('width', 21px);
+                    @include resa('height', 24px);
+                }
+            }
+        }
+        &_2{
+            position: absolute;
+            @include res('right', -137px);
+            @include res('bottom', -90px);
+            @include res('border-radius', 30px);
+            @include res('width', 223px);
+            @include res('height', 189px);
+            box-shadow: 0px .625vw .9375vw 0px rgba(0, 0, 0, 0.15);
+            line-height: 0;
+            overflow: hidden;
+            @include media(576){
+                @include resa('bottom', -67px);
+                @include resa('right', 0px);
+                @include resa('width', 163px);
+                @include resa('height', 138px);
+                @include resa('border-radius', 15px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                line-height: 0;
+            }
+            svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include res('width', 29.4px);
+                @include res('height', 33.6px);
+                transform: translate(-50%, -50%);
+                @include media(576){
+                    @include resa('width', 21px);
+                    @include resa('height', 24px);
+                }
+            }
+        }
+    }
+}
