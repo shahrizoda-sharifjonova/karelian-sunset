@@ -180,7 +180,7 @@
     }
     .swiper{
         width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         @include res('max-width', 1353px);
         @include res('padding-left', 2px);
         @include res('padding-right', 2px);
