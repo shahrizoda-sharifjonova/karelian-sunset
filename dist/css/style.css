@@ -1628,6 +1628,27 @@
   width: 51.9270833333vw;
 }
 
+.guests__item#secondItem {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 3.4375vw;
+  padding-left: 3.4375vw;
+}
+
+.guests__item#secondItem .guests__desc {
+  text-align: center;
+}
+
+.guests__item#thirdItem {
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 1.3541666667vw;
+}
+
+.guests__item#thirdItem .guests__desc {
+  text-align: right;
+}
+
 .guests__item.active {
   display: block;
 }
@@ -1733,13 +1754,10 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
 .features__left.active .features__desc {
   display: block;
 }
 
-=======
->>>>>>> 3c817ce14226e127b63113c6691325c7eb0244a5
 .features__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2208,7 +2226,6 @@
   border: solid #0DA5E0;
 }
 
-<<<<<<< HEAD
 .no-webp .videos {
   background: url("../img/videos-bg.png") bottom/cover no-repeat; }
 
@@ -2232,19 +2249,6 @@
 }
 
 .videos__title {
-=======
-.faq {
-  padding-top: 4.0104166667vw;
-}
-
-.faq__title {
-  color: #000;
-  font-size: 1.875vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.09375vw;
-  text-transform: uppercase;
->>>>>>> 1407306a6558a13978c725b7d64bcb10e8e29082
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2254,7 +2258,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
   color: #000;
   font-size: 1.875vw;
   line-height: 120%;
@@ -2291,6 +2294,7 @@
   height: 2.7083333333vw;
   top: 4.53125vw;
   left: 1.0416666667vw;
+  z-index: -1;
 }
 
 .videos__title br {
@@ -2485,7 +2489,28 @@
 
 .videos__star:not(:last-of-type) {
   margin-right: 0.0520833333vw;
-=======
+}
+
+.faq {
+  padding-top: 4.0104166667vw;
+}
+
+.faq__title {
+  color: #000;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.09375vw;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.0416666667vw;
   margin-bottom: 2.7083333333vw;
 }
@@ -2598,7 +2623,6 @@
   width: 100%;
   height: 100%;
   line-height: 0;
->>>>>>> 1407306a6558a13978c725b7d64bcb10e8e29082
 }
 
 * {
@@ -3193,16 +3217,6 @@ ul {
 
   .tabs__tel {
     display: none;
-  }
-
-  .features__left.active .features__desc {
-    display: block;
-  }
-
-  .features__left.active .features__subtitle svg {
-    -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg);
   }
 
   .faq {
