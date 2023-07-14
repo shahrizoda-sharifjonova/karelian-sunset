@@ -29,7 +29,6 @@ new Swiper(".intro__swiper", {
     }
 }); 
 
-<<<<<<< HEAD
 new Swiper(".options__swiper", {
     grabCursor: true,
     modules: [Navigation,Pagination],
@@ -54,7 +53,7 @@ new Swiper(".options__swiper2", {
     },
 }); 
 
-new Swiper(".options__swiper3", {
+new Swiper(".options__swiper3", { 
     grabCursor: true,
     modules: [Navigation,Pagination],
     slidesPerView: 1,
@@ -65,8 +64,6 @@ new Swiper(".options__swiper3", {
         nextEl: '.options__btn-next3',
     },
 }); 
-=======
->>>>>>> 02899f3a4afda39b3b64d2e325cb2262946a0e68
 
 const dropdown = document.querySelector('.header__dropdown');
 const btn = document.querySelector('.header__dropdown-btn');

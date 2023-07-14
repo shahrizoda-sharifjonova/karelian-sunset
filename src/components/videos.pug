@@ -1,0 +1,33 @@
+mixin videos()
+    .videos 
+        .videos__body.container 
+            h2.videos__title  
+                img(src="@img/videos-camera.png", alt="" draggable="false")
+                | #[span видео-обзор ] #[br]
+                | от блогера
+            .videos__row 
+                a(href="https://youtube.com").videos__img
+                    img(src="@img/guests-img.png", alt="" draggable="false")
+                .videos__content 
+                    .videos__profile    
+                        .videos__profile-img 
+                            img(src="@img/videos-profile.png", alt="" draggable="false")
+                        .videos__profile-info
+                            p.videos__name Алексей Иванов
+                            p.videos__date 15.06.2022
+                    .videos__bottom
+                        p.videos__desc Арендуя гостевой дом на берегу озера, Вы получаете в придачу чистейший и ароматный лесной воздух, песчаный пляж озера с кристально прозрачной водой!
+                        .videos__rating 
+                            .videos__rating-img 
+                                img(src="@img/videos-good.svg", alt="" draggable="false")
+                            .videos__stars 
+                                .videos__star
+                                    img(src="@img/videos-star.svg", alt="" draggable="false")
+                                .videos__star
+                                    img(src="@img/videos-star.svg", alt="" draggable="false")
+                                .videos__star
+                                    img(src="@img/videos-star.svg", alt="" draggable="false")
+                                .videos__star
+                                    img(src="@img/videos-star.svg", alt="" draggable="false")
+                                .videos__star
+                                    img(src="@img/videos-star.svg", alt="" draggable="false")
