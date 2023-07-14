@@ -61,7 +61,7 @@ lefts.forEach(left=>{
     })
 })
 
-new Swiper(".tabs__item-swiper", {
+const tabSwiper = new Swiper(".tabs__item-swiper", {
     grabCursor: true,
     modules: [Navigation,Pagination],
     slidesPerView: 1,
@@ -71,15 +71,6 @@ new Swiper(".tabs__item-swiper", {
         prevEl: '.tabs__btn-prev',
         nextEl: '.tabs__btn-next',
     },
-    // breakpoints:{
-    //     992:{
-    //         slidesPerView: 4,
-    //         spaceBetween: 22,
-    //     },
-    //     577:{
-    //         slidesPerView: 4,
-    //     }
-    // }
 }); 
 
 
@@ -88,6 +79,9 @@ if(document.querySelector('.tabs')){
     const items = document.querySelectorAll('.tabs__item')
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
+            document.querySelectorAll(".tabs__item-swiper").forEach(el => {
+                el.swiper.destroy()
+            });
             buttons.forEach(btn => {
                 btn.classList.remove('active')
             })
@@ -96,7 +90,18 @@ if(document.querySelector('.tabs')){
             const el = document.querySelector(`#${target}`)
             items.forEach(item => {
                 item.classList.remove('active')
-            })
+            }) 
+            const tabSwiper = new Swiper(".tabs__item-swiper", {
+                grabCursor: true,
+                modules: [Navigation,Pagination],
+                slidesPerView: 1,
+                spaceBetween: 0,
+                watchSlidesProgress: true,
+                navigation:{
+                    prevEl: '.tabs__btn-prev',
+                    nextEl: '.tabs__btn-next',
+                },
+            }); 
             el.classList.add('active')
         })
     })

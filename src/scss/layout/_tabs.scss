@@ -1,8 +1,14 @@
 .tabs{
     @include res('padding-top', 100px);
-    background: url('../img/tabs-bg.png') center / cover no-repeat;
+    background: url('../img/tabs-bg.png') center top / cover no-repeat;
     @include res('padding-bottom', 54px);
     position: relative;
+    isolation: isolate;
+    @include media(576){
+        @include resa('padding-top', 34px);
+        @include resa('padding-bottom', 0px);
+        background: none !important;
+    }
     &::before{
         content: '';
         position: absolute;
@@ -12,6 +18,28 @@
         background: linear-gradient(360deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
         width: 100%;
         pointer-events: none;
+        @include media(576){
+            @include resa('top', -100px);
+            @include resa('height', 467px);
+            bottom: auto;
+            z-index: -1;
+            background: url('../img/tabs-bg.png') center top / cover no-repeat;
+        }
+    }
+    &__title{
+        @include res('margin-bottom', 45px);
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        line-height: 120%;
+        text-transform: uppercase;
+        @include media(576){
+            @include resa('margin-bottom', 54px);
+            @include resa('font-size', 20px);
+            @include resa('line-height', 25px);
+        }
     }
     &__top{
         display: flex;
@@ -25,16 +53,23 @@
         @include res('padding-right', 13px);
         background: rgba(234, 247, 252, 0.85);
         border-radius: 1.0833333333vw 1.0833333333vw 0 0;
-    }
-    &__title{
-        @include res('margin-bottom', 45px);
-        color: #000;
-        @include res('font-size', 36px);
-        font-style: normal;
-        font-weight: 700;
-        text-align: center;
-        @include res('line-height', 21px);
-        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+        @include media(576){
+            align-items: flex-start;
+            justify-content: center;
+            @include resa('margin-bottom', -70px);
+            @include resa('height', 160px);
+            @include resa('width', 280px);
+            @include resa('max-width', 280px);
+            @include resa('padding-top', 7px);
+            @include resa('padding-bottom', 7px);
+            @include resa('padding-left', 5px);
+            @include resa('padding-right', 5px);
+            flex-wrap: wrap;
+            border-radius: 5.0833333333vw 5.0833333333vw 0 0;
+            background: rgba(234, 247, 252, 1);
+        }
     }
     &__btn{
         color: #8E8E8E;
@@ -56,9 +91,24 @@
         @include res('padding-right', 30px);
         cursor: pointer;
         @include res('border-radius', 10px);
+        @include media(576){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 13px);
+            @include resa('max-width', 112px);
+            @include resa('gap', 3px);
+            @include resa('padding-top', 4px);
+            @include resa('padding-bottom', 8px);
+            @include resa('padding-left', 13px);
+            @include resa('padding-right', 13px);
+            @include resa('border-radius', 12px);
+        }
         svg{
             @include res('width', 52px);
             @include res('height', 38px);
+            @include media(576){
+                @include resa('width', 31.2px);
+                @include resa('height', 34.8px);
+            }
         }
         &.active{
             background: #fff;
@@ -90,6 +140,17 @@
         @include res('padding-bottom', 21px);
         @include res('padding-left', 50px);
         @include res('padding-right', 117px);
+        position: relative;
+        @include media(576){
+            @include resa('width', 320px);
+            @include resa('margin-left', -15px);
+            @include resa('padding-top', 70px);
+            @include resa('padding-left', 15px);
+            @include resa('padding-right', 15px);
+            @include resa('padding-bottom', 28px);
+            background: rgba(234, 247, 252, 1);
+            border-radius: 5.0833333333vw;
+        }
     }
     &__item{
         display: none;
@@ -97,24 +158,42 @@
         justify-content: space-between;
         @include res('gap', 70px);
         @include res('margin-bottom', 27px);
+        @include media(576){
+            flex-direction: column;
+            @include resa('gap', 27px);
+            @include resa('padding-top', 27px);
+        }
         &.active{
             display: flex;
         }
         &-slider{
             @include res('width', 647px);
             @include res('height', 472px);
+            position: relative;
+            @include media(576){
+                @include resa('width', 250px);
+                @include resa('height', 262px);
+            }
         }
         &-swiper{
             overflow: hidden;
             width: 100%;
             height: 100%;
+            position: relative;
             @include res('border-radius', 15px);
+            @include media(576){
+                @include resa('border-radius', 15px);
+            }
         }
         &-wrapper{
             display: flex;
             width: max-content;
         }
         &-slide{
+            @include media(576){
+                @include resa('height', 262px);
+                @include resa('border-radius', 15px);
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -127,6 +206,13 @@
             font-weight: 700;
             line-height: 120%;
             @include res('margin-bottom', 20px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('margin-bottom', 8px);
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         &-p{
             color: #000;
@@ -135,6 +221,12 @@
             font-weight: 400;
             @include res('line-height', 28px);
             @include res('margin-bottom', 40px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('line-height', 24px);
+                @include resa('margin-bottom', 12px);
+                text-align: center;
+            }
         }
         &-sep{
             display: block;
@@ -143,6 +235,13 @@
             @include res('border-width', 1px);
             @include res('width', 140px);
             @include res('margin-bottom', 40px);
+            @include media(576){
+                @include resa('border-width', 1px);
+                @include resa('margin-bottom', 18px);
+                @include resa('width', 140px);
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         &-info{
             color: #000;
@@ -150,12 +249,52 @@
             font-style: normal;
             font-weight: 400;
             @include res('line-height', 28px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('line-height', 28px);
+                @include resa('max-width', 240px);
+            }
             &+.tabs__item-info{
                 @include res('margin-top', 7px);
+                @include media(576){
+                    @include resa('margin-top', 6px);
+                }
             }
             span{
                 font-weight: 600;
             }
+        }
+    }
+    &__navigation{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        pointer-events: none;
+        @include res('padding-right', 24px);
+        @include res('padding-left', 24px);
+        @include media(576){
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &__btn-prev,
+    &__btn-next{
+        @include res('width', 43px);
+        @include res('height', 43px);
+        pointer-events: all;
+        @include media(576){
+            @include resa('width', 33px);
+            @include resa('height', 33px);
+            @include resa('margin-right', -16.5px);
+            @include resa('margin-left', -16.5px);
+        }
+        svg{
+            width: 100%;
+            height: 100%;
         }
     }
     &__tel{
@@ -168,6 +307,9 @@
         font-style: normal;
         font-weight: 500;
         @include res('line-height', 28px);
+        @include media(576){
+            display: none;
+        }
         button{
             color: #35B8EB;
             @include res('font-size', 16px);
