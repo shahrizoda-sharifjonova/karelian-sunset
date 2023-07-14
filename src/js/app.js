@@ -47,7 +47,14 @@ menu.addEventListener('click', (e)=>{
     body.classList.toggle('active')
 })
 
+const lefts = document.querySelectorAll('.features__left');
+const texts = document.querySelectorAll('.features__desc');
 
+lefts.forEach(left=>{
+    left.addEventListener('click', (e)=>{
+        left.classList.toggle('active')
+    })
+})
 
 
 if(window.innerWidth >= 577) {
