@@ -172,6 +172,15 @@
 .header .logo {
   width: 6.25vw;
   height: 1.8229166667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .logo img,
@@ -823,9 +832,9 @@
 .intro__slider {
   width: 100%;
   position: relative;
-  -webkit-transform: translateY(10.667vw);
-      -ms-transform: translateY(10.667vw);
-          transform: translateY(10.667vw);
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .intro .swiper {
@@ -892,7 +901,10 @@
   width: calc(100% + 4.479vw);
   position: absolute;
   margin-left: -2.2395833333vw;
-  top: 0.5729166667vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -913,9 +925,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  -webkit-transition: 300ms ease;
-  -o-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
 }
 
 .intro__btn-prev:hover {
@@ -942,9 +954,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  -webkit-transition: 300ms ease;
-  -o-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
 }
 
 .intro__btn-next:hover {
@@ -1596,7 +1608,7 @@ ul {
   .intro {
     margin-top: -15.625vw;
     padding-top: 40.625vw;
-    margin-bottom: 0;
+    margin-bottom: 25vw;
   }
 
   .intro__items {
@@ -1666,9 +1678,9 @@ ul {
   }
 
   .intro__slider {
-    -webkit-transform: translateY(0.625vw);
-        -ms-transform: translateY(0.625vw);
-            transform: translateY(0.625vw);
+    -webkit-transform: translateY(20.313vw);
+        -ms-transform: translateY(20.313vw);
+            transform: translateY(20.313vw);
   }
 
   .intro .swiper {
@@ -1698,10 +1710,6 @@ ul {
   .intro__buttons {
     width: 100%;
     margin-left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
 
   .intro__btn-prev {
