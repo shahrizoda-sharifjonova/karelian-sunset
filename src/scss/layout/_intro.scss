@@ -160,6 +160,7 @@
             @include res('min-width', 13px);
             @include res('width', 13px);
             @include res('margin-right', 15px);
+            @include res('height', 18px);
             @include media(576){
                 @include resa('min-width', 9px);
                 @include resa('width', 9px);
