@@ -28,6 +28,42 @@ new Swiper(".intro__swiper", {
     }
 }); 
 
+new Swiper(".options__swiper", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 15,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: '.options__btn-prev',
+        nextEl: '.options__btn-next',
+    },
+}); 
+
+new Swiper(".options__swiper2", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 15,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: '.options__btn-prev2',
+        nextEl: '.options__btn-next2',
+    },
+}); 
+
+new Swiper(".options__swiper3", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 15,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: '.options__btn-prev3',
+        nextEl: '.options__btn-next3',
+    },
+}); 
+
 const dropdown = document.querySelector('.header__dropdown');
 const btn = document.querySelector('.header__dropdown-btn');
 const content = document.querySelector('.header__dropdown-content');
