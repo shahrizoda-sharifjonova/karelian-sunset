@@ -1,6 +1,8 @@
 .options{
     @include res('padding-top', 117px);
+    @include res('padding-bottom', 140px);
     @include media(575){
+        @include resa('padding-bottom', 47px);
         @include resa('padding-top', 30px);
     }
     &__title{

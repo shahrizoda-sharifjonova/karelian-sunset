@@ -73,9 +73,9 @@
             .features__desc{
                 display: block;
             }
-            @include media(576){
-                .features__subtitle{
-                    svg{
+            .features__subtitle{
+                svg{
+                    @include media(575){
                         transform: rotate(-180deg);
                     }
                 }

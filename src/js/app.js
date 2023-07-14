@@ -53,7 +53,7 @@ new Swiper(".options__swiper1", {
     slidesPerView: 1,
     spaceBetween: 15,
     watchSlidesProgress: true,
-    navigation:{
+    navigation:{ 
         prevEl: '.options__btn-prev1',
         nextEl: '.options__btn-next1',
     },
