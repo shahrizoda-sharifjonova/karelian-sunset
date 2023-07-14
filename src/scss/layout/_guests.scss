@@ -1,4 +1,6 @@
 .guests{
+    position: relative;
+    z-index: 2; 
     @include media(575){
         @include resa('padding-top', 15px);
     }

@@ -1,7 +1,7 @@
 .header{
     @include res('padding-top', 14px);
     position: relative;
-    z-index: 1;
+    z-index: 50;
     @include media(575){
         @include resa('padding-top', 20px);
     }

@@ -27,7 +27,7 @@
         }
     }
     &__row{
-        display: flex;
+        display: flex; 
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -70,21 +70,12 @@
             border-radius: 0 0 4.688vw 4.688vw;
         }
         &.active{
-<<<<<<< HEAD
             .features__desc{
                 display: block;
             }
-            .features__subtitle{
-                svg{
-                    @include media(575){
-=======
             @include media(576){
-                .features__desc{
-                    display: block;
-                }
                 .features__subtitle{
                     svg{
->>>>>>> 3c817ce14226e127b63113c6691325c7eb0244a5
                         transform: rotate(-180deg);
                     }
                 }
