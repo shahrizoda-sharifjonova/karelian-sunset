@@ -1345,6 +1345,7 @@
   width: 2.2395833333vw;
   height: 2.2395833333vw;
   pointer-events: all;
+  cursor: pointer;
 }
 
 .tabs__btn-prev svg,

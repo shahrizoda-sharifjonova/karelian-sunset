@@ -286,6 +286,7 @@
         @include res('width', 43px);
         @include res('height', 43px);
         pointer-events: all;
+        cursor: pointer;
         @include media(576){
             @include resa('width', 33px);
             @include resa('height', 33px);
