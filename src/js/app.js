@@ -7,6 +7,24 @@ functions.isWebp();
 
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+$(document).ready(function() {
+    $(".faq__acc > .faq__acc-button").on("click", function() {
+        if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(this)
+                    .siblings(".faq__acc-content")
+                    .slideUp(200);
+        } else {
+            $(".faq__acc > .faq__acc-button").removeClass("active");
+            $(this).addClass("active");
+            $(".faq__acc-content").slideUp(200);
+            $(this)
+                .siblings(".faq__acc-content")
+                .slideDown(200);
+        }
+    });
+});
+
 
 new Swiper(".intro__swiper", {
     grabCursor: true,
@@ -29,15 +47,15 @@ new Swiper(".intro__swiper", {
     }
 }); 
 
-new Swiper(".options__swiper", {
+new Swiper(".options__swiper1", {
     grabCursor: true,
     modules: [Navigation,Pagination],
     slidesPerView: 1,
     spaceBetween: 15,
     watchSlidesProgress: true,
     navigation:{
-        prevEl: '.options__btn-prev',
-        nextEl: '.options__btn-next',
+        prevEl: '.options__btn-prev1',
+        nextEl: '.options__btn-next1',
     },
 }); 
 

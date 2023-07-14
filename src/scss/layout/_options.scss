@@ -79,6 +79,7 @@
         @include res('border-radius', 20px);
         overflow: hidden;
         width: 100%;
+        line-height: 0;
         @include media(575){
             @include resa('border-radius', 15px);
         }

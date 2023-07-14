@@ -71,6 +71,7 @@
             @include res('height', 52px);
             @include res('top', 87px);
             @include res('left', 20px);
+            z-index: -1;
             @include media(575){
                 display: none;
             }
