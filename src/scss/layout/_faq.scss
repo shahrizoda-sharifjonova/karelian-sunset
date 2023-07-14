@@ -109,6 +109,9 @@
             @include res('padding-left', 47px);
             @include res('padding-right', 118px);
             display: none;
+            &.active{
+                display: block;
+            }
             @include media(576){
                 @include resa('padding-top', 13px);
                 @include resa('padding-left', 0px);
