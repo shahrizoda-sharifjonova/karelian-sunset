@@ -1,0 +1,146 @@
+.faq{
+    @include res('padding-top', 77px);
+    @include media(576){
+        @include resa('padding-top', 40px);
+    }
+    &__title{
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 20px);
+        @include res('margin-bottom', 52px);
+        @include media(576){
+            flex-direction: column;
+
+            @include resa('font-size', 20px);
+            @include resa('line-height', 32px);
+            @include resa('gap', 23px);
+            @include resa('margin-bottom',23px);
+        }
+        svg{
+            @include res('width', 104px);
+            @include res('height', 104px);
+            @include media(576){
+                @include resa('width', 76px);
+                @include resa('height', 76px);
+            }
+        }
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        @include res('gap', 96px);
+    }
+    &__content{
+        @include res('width', 788px);
+        @include media(576){
+            width: 100%;
+        }
+    }
+    &__acc{
+        width: 100%;
+        &+.faq__acc{
+            @include res('margin-top', 35px);
+            @include media(576){
+                @include resa('margin-top', 17px);
+            }
+        }
+        &-btn{
+            width: 100%;
+            @include res('border-radius', 30px);
+            border: solid #35B8EB;
+            @include res('border-width', 2px);
+            background: #EAF7FC;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include res('padding-left', 47px);
+            @include res('padding-right', 23px);
+            @include res('padding-top', 12px);
+            @include res('padding-bottom', 12px);
+            color: #000;
+            @include res('font-size', 18px);
+            font-style: normal;
+            font-weight: 600;
+            @include res('line-height', 21px);
+            text-transform: uppercase;
+            transition: 300ms ease-out;
+            @include media(576){
+                @include resa('border-radius', 19px);
+                @include resa('border-width', 1px);
+                @include resa('padding-left', 10px);
+                @include resa('padding-right', 9px);
+                @include resa('padding-top', 10px);
+                @include resa('padding-bottom', 10px);
+                @include resa('font-size', 14px);
+                @include resa('line-height', 21px);
+                @include resa('gap', 6px);
+                flex-direction: column;
+                align-items: center;
+            }
+            &.active{
+                background: #35B8EB;
+                color: #fff;
+                svg{
+                    transform: rotate(0deg);
+                    fill: #fff;
+                }
+            }
+            svg{
+                @include res('height', 10px);
+                @include res('width', 18px);
+                transition: 300ms ease-out;
+                fill: #35B8EB;
+                transform: rotate(180deg);
+                @include media(576){
+                    @include resa('height', 10px);
+                    @include resa('width', 18px);
+                }
+            }
+        }
+        &-content{
+            @include res('padding-top', 17px);
+            @include res('padding-left', 47px);
+            @include res('padding-right', 118px);
+            display: none;
+            @include media(576){
+                @include resa('padding-top', 13px);
+                @include resa('padding-left', 0px);
+                @include resa('padding-right', 0px);
+            }
+        }
+        &-p{
+            color: #000;
+            @include res('font-size', 18px);
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 21px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('line-height', 21px);
+                text-align: center;
+            }
+        }
+    }
+    &__img{
+        @include res('width', 556px);
+        @include res('height', 589px);
+        line-height: 0;
+        @include res('border-radius', 20px);
+        overflow: hidden;
+        @include media(576){
+            display: none;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            line-height: 0;
+        }
+    }
+}
