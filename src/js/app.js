@@ -159,6 +159,19 @@ new Swiper(".reviews__swiper", {
     },
 }); 
 
+new Swiper(".info__swiper", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: '.info__navigation-prev',
+        nextEl: '.info__navigation-next',
+    },
+}); 
+
 
 if(document.querySelector('.tabs')){
     const buttons = document.querySelectorAll('.tabs__btn')
