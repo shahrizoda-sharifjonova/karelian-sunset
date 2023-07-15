@@ -3,6 +3,17 @@
     @include media(576){
         @include resa('padding-top', 40px);
     }
+    &_2{
+        .faq__content{
+            width: 100%;
+        }
+        .faq__title{
+            text-align: center;
+            @include media(576){
+                text-align: center;
+            }
+        }
+    }
     &__title{
         color: #000;
         @include res('font-size', 36px);
