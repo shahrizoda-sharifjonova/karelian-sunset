@@ -86,6 +86,7 @@
             @include res('margin-right', 17px);
             @include res('width', 102px);
             @include res('height', 100px);
+            line-height: 0;
             @include media(575){
                 position: absolute;
                 @include resa('width', 58px);
@@ -119,6 +120,7 @@
         @include res('border-radius', 40px);
         overflow: hidden;
         @include res('margin-right', 89px);
+        line-height: 0;
         @include media(575){
             max-width: 100%;
             @include resa('padding', 16px);

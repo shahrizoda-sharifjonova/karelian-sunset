@@ -2310,6 +2310,7 @@
   margin-right: 0.8854166667vw;
   width: 5.3125vw;
   height: 5.2083333333vw;
+  line-height: 0;
 }
 
 .videos__title span {
@@ -2335,6 +2336,7 @@
   border-radius: 2.0833333333vw;
   overflow: hidden;
   margin-right: 4.6354166667vw;
+  line-height: 0;
 }
 
 .videos__img img {
