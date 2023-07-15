@@ -1,0 +1,53 @@
+.discounts{
+    background:  url(../img/discounts-bg.png) center / cover no-repeat;
+    position: relative;
+    z-index: 5;
+    isolation: isolate;
+    @include res('padding-top', 132px);
+    @include res('padding-bottom', 132px);
+    @include res('margin-top', 138px);
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 181, 239, 0.61);
+        z-index: -1;
+        top: 0;
+    }
+    &__title{
+        color: #FFF;
+        @include res('font-size', 36px);
+        @include res('line-height', 21px);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        @include res('margin-bottom', 52px);
+    }
+    &__content{
+        @include res('padding-top', 51px);
+        @include res('padding-right', 103px);
+        @include res('padding-bottom', 61px);
+        @include res('padding-left', 111px);
+        @include res('border-radius', 80px);
+        background: #FFF;
+    }
+    &__subtitle{
+        color: #000;
+        text-align: center;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 49px);
+        text-transform: uppercase;
+        @include res('max-width', 764px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        span{
+            position: relative;
+            
+        }
+    }
+}

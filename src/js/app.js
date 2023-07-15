@@ -85,14 +85,19 @@ new Swiper(".options__swiper3", {
 
 new Swiper(".services__swiper", { 
     grabCursor: true,
-    modules: [Pagination],
+    modules: [Pagination, Navigation],
     slidesPerView: 1,
     spaceBetween: 15,
     watchSlidesProgress: true,
+    loop: true,
     pagination:{
         el: '.services__pagination',
         clickable: true,
     },
+    navigation:{
+        prevEl: '.services__btn-prev',
+        nextEl: '.services__btn-next',
+    }
 }); 
 
 const dropdown = document.querySelector('.header__dropdown');
