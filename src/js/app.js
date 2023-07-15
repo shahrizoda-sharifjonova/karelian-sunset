@@ -93,6 +93,10 @@ new Swiper(".services__swiper", {
         el: '.services__pagination',
         clickable: true,
     },
+    navigation:{
+        prevEl: '.services__btn-prev',
+        nextEl: '.services__btn-next',
+    }
 }); 
 
 const dropdown = document.querySelector('.header__dropdown');
@@ -226,3 +230,30 @@ if(window.innerWidth >= 577) {
         });
     });
 }
+
+
+const btns = document.querySelectorAll('.popup-open');
+const popups = document.querySelectorAll('.popup');
+const popupClose = document.querySelectorAll('.popup-close');
+
+btns.forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+        body.classList.remove('hidden')
+        popups.forEach(popup=>{
+            popup.classList.remove('active')
+        })
+        const target = btn.getAttribute('data-target')
+        const elem = document.querySelector(`#${target}`);
+        elem.classList.add('active')
+        body.classList.add('hidden')
+    })
+})
+
+popupClose.forEach(el => {
+    el.addEventListener('click', (e)=>{
+        body.classList.remove('hidden')
+        popups.forEach(popup=>{
+            popup.classList.remove('active')
+        })
+    })
+})

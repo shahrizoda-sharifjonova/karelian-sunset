@@ -1,0 +1,11 @@
+mixin discounts()
+    .discounts 
+        .discounts__body.container 
+            h2.discounts__title АКЦИЯ
+            .discounts__content 
+                p.discounts__subtitle бронируй прямо сейчас и получи 2 ч. бани    #[span   в подарок]
+                p.discounts__desc Заполните форму и с вами свяжется наш менеджер для уточнения бронирования
+                form(action="").discounts__form
+                    input(type="text" placeholder="Период бронирования" required).discounts__input 
+                    input(type="number" placeholder="Номер телефона" required).discounts__input 
+                    button(type="submit").discounts__btn ОТПРАВИТЬ

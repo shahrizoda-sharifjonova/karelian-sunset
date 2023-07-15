@@ -1,0 +1,90 @@
+.info{
+    @include res('padding-top', 95px);
+    @include res('padding-bottom', 80px);
+    &__title{
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        text-align: center;
+        @include res('margin-bottom', 65px);
+    }
+    &__top{
+        @include res('margin-bottom', 23px);
+    }
+    &__gallery{
+        display: flex;
+        justify-content: space-between;
+        @include res('gap', 16px);
+        @include res('margin-bottom', 48px);
+        @include media(576){
+            display: none;
+        }
+        &-content{
+            display: flex;
+            flex-wrap: wrap;
+            @include res('column-gap', 18px);
+            @include res('row-gap', 16px);
+        }
+        &-item{
+            position: relative;
+            @include res('border-radius', 20px);
+            overflow: hidden;
+            line-height: 0;
+            @include res('width', 368px);
+            @include res('height', 265px);
+            display: block;
+            &.big{
+                @include res('width', 667px);
+                @include res('min-width', 667px);
+                @include res('height', 546px);
+                svg{
+                    @include res('width', 112px);
+                    @include res('height', 108px);
+                }
+            }
+            svg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include res('width', 81px);
+                @include res('height', 78px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                line-height: 0;
+            }
+        }
+    }
+    &__p{
+        color: #000;
+        text-align: center;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 28px);
+        @include res('margin-bottom', 47px);
+        @include res('max-width', 1077px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 58px);
+    }
+    &__span{
+        color: #000;
+        @include res('font-size', 20px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('line-height', 28px);
+        span{
+            font-weight: 600;
+        }
+    }
+}

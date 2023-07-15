@@ -162,7 +162,7 @@
     &__li{
         display: flex;
         align-items: center;
-        &:not(:last-of-type){
+        &:not(:nth-child(3)){
             @include res('margin-right', 43px);
             @include media(575){
                 margin-right: 0;
