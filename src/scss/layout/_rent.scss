@@ -1,0 +1,246 @@
+.rent{
+    @include res('border-radius', 0.5px);
+    background: #EAF7FC;
+    @include res('padding-top', 26px);
+    @include res('padding-bottom', 50px);
+    @include media(575){
+        padding-top: 0;
+        @include resa('padding-bottom', 30px);
+    }
+    &__title{
+        @include res('padding-left', 101px);
+        color: #000;
+        @include res('font-size', 20px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include res('margin-bottom', 32px);
+        position: relative;
+        text-align: center;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('padding-top', 64px);
+            @include resa('line-height', 28.5px);
+            @include resa('margin-bottom', 10px);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            @include res('bottom', -15px);
+            left: 0;
+            @include res('width', 88px);
+            @include res('height', 88px);
+            background: url(../img/rent-coins.svg) center / cover no-repeat;
+            @include media(575){
+                @include resa('width', 70px);
+                @include resa('height', 70px);
+                @include resa('top', -6px);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__infos{
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        @include res('margin-bottom', 26px);
+        @include media(575){
+            flex-direction: column;
+            @include resa('margin-bottom', 18px);
+        }
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        @include res('padding-top', 17px);
+        @include res('padding-bottom', 17px);
+        @include res('padding-right', 51px);
+        @include res('padding-left', 51px);
+        @include res('border-radius', 10px);
+        background: #FFF;
+        @include media(575){
+            padding: 0;
+            flex-direction: column;
+            @include resa('border-radius', 10px);
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 31px);
+            @include media(575){
+                margin-right: 0;
+                @include resa('margin-bottom', 6px);
+            }
+        }
+    }
+    &__text{
+        color: #000;
+        @include res('font-size', 18px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 500;
+        @include res('margin-right', 19px);
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 28.5px);
+            margin-right: 0;
+        }
+    }
+    &__price{
+        color: #35B8EB;
+        @include res('font-size', 24px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 600;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 25.5px);
+        }
+        &.enable-sm{
+            display: none;
+            @include resa('width', 22px);
+            @include resa('margin-bottom', 6px);
+            @include media(575){
+                display: block;
+            }
+        }
+    }
+    &__times{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('margin-bottom', 47px);
+        @include media(575){
+            flex-direction: column;
+            @include resa('margin-bottom', 15px);
+        }
+    }
+    &__time{
+        display: flex;
+        align-items: center;
+        color: #000;
+        @include res('font-size', 20px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 28.5px);
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 19px);
+            @include media(575){
+                margin-right: 0;
+            }
+        }
+        svg{
+            @include res('width', 22px);
+            @include res('height', 22px);
+            @include res('margin-right', 19px);
+            @include media(575){
+                display: none;
+            }
+        }
+        span{
+            color: #35B8EB;
+            font-weight: 700;
+            @include resa('margin-left', 3px);
+            @include media(575){
+                @include resa('margin-left', 2px);
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        @include media(575){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        @include media(575){
+            flex-direction: column;
+            align-items: center;
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 65px);
+            @include media(575){
+                margin-right: 0;
+                @include resa('margin-bottom', 15px);
+            }
+        }
+        &:first-of-type{
+            @include media(575){
+                order: 2;
+            }
+        }
+        &:nth-of-type(2){
+            @include media(575){
+                display: none;
+            }
+        }
+    }
+    &__img{
+        @include res('width', 22px);
+        @include res('margin-right', 14px);
+        @include res('margin-top', 5px);
+        @include media(575){
+            @include resa('width', 20px);
+            @include resa('margin-bottom', 15px);
+        }
+        &.second{
+            @include res('width', 18px);
+        }
+        &.third{
+            @include res('width', 20px);
+            @include media(575){
+                @include resa('width', 20px);
+            }
+        }
+        &.fourth{
+            @include res('width', 26px);
+            @include media(575){
+                @include resa('width', 26px);
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__subtitle{
+        display: flex;
+        align-items: center;
+        color: #000;
+        @include res('font-size', 20px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 600;
+        @include res('margin-bottom', 8px);
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 24.5px);
+            justify-content: center;
+        }
+    }
+    &__desc{
+        @include res('max-width', 295px);
+        width: 100%;
+        color: #000;
+        @include res('font-size', 20px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 400;
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 28.5px);
+            @include resa('max-width', 260px);
+            text-align: center;
+        }
+    }
+}
