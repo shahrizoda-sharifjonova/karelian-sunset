@@ -2,6 +2,24 @@
     @include res('padding-top', 14px);
     position: relative;
     z-index: 50;
+    &.blue{
+        background: #35B8EB;
+        @include res('padding-bottom', 14px);
+        @include media(576){
+            @include resa('padding-bottom', 20px);
+        }
+        .header__discount{
+            background: #fff;
+            color: #35B8EB;
+        }
+        .menu{
+            &:not(.active)::before,
+            &:not(.active)::after,
+            &-btn{
+                background: #fff;
+            } 
+        }
+    }
     @include media(575){
         @include resa('padding-top', 20px);
     }

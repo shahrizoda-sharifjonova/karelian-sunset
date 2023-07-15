@@ -148,6 +148,22 @@
   z-index: 50;
 }
 
+.header.blue {
+  background: #35B8EB;
+  padding-bottom: 0.7291666667vw;
+}
+
+.header.blue .header__discount {
+  background: #fff;
+  color: #35B8EB;
+}
+
+.header.blue .menu:not(.active)::before,
+.header.blue .menu:not(.active)::after,
+.header.blue .menu-btn {
+  background: #fff;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3515,6 +3531,10 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .header.blue {
+    padding-bottom: 6.25vw;
+  }
+
   .footer {
     padding-top: 10.9375vw;
     padding-bottom: 10.9375vw;
