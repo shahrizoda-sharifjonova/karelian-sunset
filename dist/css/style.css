@@ -2767,6 +2767,7 @@
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 1.9270833333vw;
 }
 
 .services .swiper-wrapper {
@@ -4244,11 +4245,120 @@
   font-weight: 700;
   line-height: 1.09375vw;
   text-transform: uppercase;
+  margin-bottom: 1.7708333333vw;
 }
 
 .bron__title svg {
   width: 4.375vw;
   height: 4.375vw;
+}
+
+.bron__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.7604166667vw;
+}
+
+.bron__form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 2.2395833333vw;
+     -moz-column-gap: 2.2395833333vw;
+          column-gap: 2.2395833333vw;
+  row-gap: 1.4583333333vw;
+  width: 69.6354166667vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bron__form-item {
+  width: 21.71875vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625vw;
+}
+
+.bron__form-label {
+  color: #35B8EB;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4583333333vw;
+}
+
+.bron__form-input {
+  position: relative;
+  background: #FFF;
+  border-radius: 0.5208333333vw;
+  height: 3.125vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0.625vw;
+  padding-right: 1.09375vw;
+  font-size: 0.8333333333vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+}
+
+.bron__form-input input {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border: none;
+}
+
+.bron__form-input svg {
+  margin-right: 0.5208333333vw;
+  width: 1.1458333333vw;
+  height: 1.0416666667vw;
+}
+
+.bron__form-btn {
+  border-radius: 1.5625vw;
+  background: #35B8EB;
+  padding-top: 0.78125vw;
+  padding-bottom: 0.78125vw;
+  padding-right: 9.0104166667vw;
+  padding-left: 9.0104166667vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.09375vw;
 }
 
 .no-webp .discounts {
@@ -5350,6 +5460,87 @@ ul {
             column-gap: 1.5625vw;
   }
 
+  .bron {
+    padding-top: 5.3125vw;
+    padding-bottom: 10vw;
+  }
+
+  .bron__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 3.4375vw;
+    font-size: 6.25vw;
+    line-height: 7.8125vw;
+    text-align: center;
+    margin-bottom: 5vw;
+    max-width: 83.75vw;
+  }
+
+  .bron__title svg {
+    width: 20.625vw;
+    height: 20.625vw;
+  }
+
+  .bron__form {
+    gap: 10.3125vw;
+  }
+
+  .bron__form-content {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2.5vw;
+  }
+
+  .bron__form-item {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.5vw;
+  }
+
+  .bron__form-label {
+    font-size: 4.375vw;
+    line-height: 8.75vw;
+  }
+
+  .bron__form-input {
+    width: 100%;
+    border-radius: 3.125vw;
+    height: 12.5vw;
+    padding-left: 3.75vw;
+    padding-right: 3.75vw;
+    font-size: 3.75vw;
+    line-height: 8.75vw;
+  }
+
+  .bron__form-input svg {
+    margin-right: 3.4375vw;
+    width: 5.5vw;
+    height: 5vw;
+  }
+
+  .bron__form-btn {
+    border-radius: 9.375vw;
+    padding-top: 4.6875vw;
+    padding-bottom: 4.6875vw;
+    padding-right: 15.625vw;
+    padding-left: 15.625vw;
+    width: 100%;
+    font-size: 4.375vw;
+    line-height: 6.5625vw;
+  }
+
   .container {
     max-width: 107.8125vw;
     padding-right: 4.6875vw;
@@ -6120,6 +6311,7 @@ ul {
 
   .services .swiper {
     max-width: 100%;
+    border-radius: 4.6875vw;
   }
 
   .services .swiper-pagination {

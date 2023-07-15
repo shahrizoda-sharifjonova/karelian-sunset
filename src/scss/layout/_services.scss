@@ -121,8 +121,10 @@
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
+        @include res('border-radius', 37px);
         @include media(575){
             max-width: 100%;
+            @include resa('border-radius', 15px);
         }
         &-wrapper{
             display: flex;
