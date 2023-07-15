@@ -3842,6 +3842,22 @@
   font-weight: 400;
 }
 
+.info {
+  padding-top: 4.9479166667vw;
+  padding-bottom: 4.1666666667vw;
+}
+
+.info__title {
+  color: #000;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.09375vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3.3854166667vw;
+}
+
 * {
   margin: 0;
   padding: 0;

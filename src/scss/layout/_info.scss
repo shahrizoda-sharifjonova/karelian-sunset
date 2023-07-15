@@ -1,0 +1,14 @@
+.info{
+    @include res('padding-top', 95px);
+    @include res('padding-bottom', 80px);
+    &__title{
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        text-align: center;
+        @include res('margin-bottom', 65px);
+    }
+}
