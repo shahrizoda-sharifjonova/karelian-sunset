@@ -1,0 +1,127 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500000;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #00000060;
+    }
+    &__body{
+        @include res('border-radius', 20px);
+        background: #EAF7FC;
+        position: relative;
+        @include res('padding-top', 37px);
+        @include res('padding-bottom', 37px);
+        @include res('padding-right', 87px);
+        @include res('padding-left', 87px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__close{
+        position: absolute;
+        @include res('top', 25px);
+        @include res('right', 27px);
+        @include res('width', 14px);
+        @include res('height', 14px);
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 18px);
+        color: #000;
+        @include res('font-size', 24px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.4%;
+        @include res('margin-bottom', 30px);
+        svg{
+            @include res('width', 24px);
+            @include res('height', 24px);
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include res('gap', 13px);
+    }
+    &__input{
+        @include res('height', 44px);
+        @include res('width', 328px);
+        width: 100%;
+        @include res('padding-left', 22px);
+        border-radius: 30px;
+        @include res('border-radius', 30px);
+        background: #FBFBFB;
+        border: none;
+        color: #8A8A8A;
+        @include res('font-size', 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.4%;
+    }
+    &__btn{
+        @include res('padding-top', 12px);
+        @include res('padding-bottom', 12px);
+        @include res('height', 44px);
+        @include res('width', 328px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #35B8EB;
+        @include res('border-radius', 30px);
+        width: 100%;
+        color: #FFF;
+        @include res('font-size', 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 124.4%;
+        @include res('margin-bottom', 30px);
+    }
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 14px);
+    }
+    &__chk{
+        @include res('width', 14px);   
+        @include res('height', 14px);  
+        cursor: pointer; 
+    }
+    &__label{
+        color: #16333F;
+        @include res('font-size', 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.4%;
+        a{
+            color: #35B8EB;
+        }
+    }
+}
