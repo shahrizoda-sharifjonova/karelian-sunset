@@ -6,6 +6,11 @@
     @include res('padding-top', 132px);
     @include res('padding-bottom', 132px);
     @include res('margin-top', 138px);
+    @include media(575){
+        @include resa('padding-top', 27px);
+        @include resa('padding-bottom', 37px);
+        @include resa('margin-top', 44px);
+    }
     &::before{
         content: '';
         position: absolute;
@@ -24,6 +29,11 @@
         text-transform: uppercase;
         text-align: center;
         @include res('margin-bottom', 52px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            @include resa('line-height', 21px);
+            @include resa('margin-bottom', 16px);
+        }
     }
     &__content{
         @include res('padding-top', 51px);
@@ -32,6 +42,18 @@
         @include res('padding-left', 111px);
         @include res('border-radius', 80px);
         background: #FFF;
+        @include res('max-width', 1216px);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include media(575){
+            @include resa('padding-top', 24px);
+            @include resa('padding-right', 11px);
+            @include resa('padding-bottom', 21px);
+            @include resa('padding-left', 11px);
+            @include resa('border-radius', 15px);
+            max-width: 100%;
+        }
     }
     &__subtitle{
         color: #000;
@@ -45,9 +67,139 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        display: block;
+        @include res('margin-bottom', 32px);
+        @include media(575){
+            @include resa('font-size', 20px);
+            @include resa('line-height', 32px);
+            @include resa('max-width', 220px);
+            @include resa('margin-bottom', 56px);
+        }
         span{
             position: relative;
-            
+            @include res('margin-left', 17px);
+            isolation: isolate;
+            @include res('border-radius', 27.5px);
+            background: #35B8EB;
+            color: #fff;
+            @include res('padding-left', 28px);
+            @include res('padding-right', 66px);
+            @include media(575){
+                display: block;
+                @include resa('padding-left', 35px);
+                @include resa('padding-right', 35px);
+                width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+                @include resa('border-radius', 27.5px);
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background: url(../img/discounts-gift.svg) center / cover no-repeat;
+                @include res('width', 115px);
+                @include res('height', 115px);
+                @include res('right', -45px);
+                top: 50%;
+                transform: translateY(-50%) rotate(7.96deg);
+                @include media(575){
+                    @include resa('width', 56px);
+                    @include resa('height', 56px);
+                    @include resa('bottom', 6px);
+                    transform: translate(-50%, 0) rotate(-11.43deg);
+                    top: calc(100% - 1.875vw);
+                    left: 50%;
+                }
+            }
+        }
+    }
+    &__desc{
+        color: #000;
+        text-align: center;
+        @include res('font-size', 20px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 600;
+        @include res('margin-bottom', 51px);
+        @include media(575){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 24.5px);
+            @include resa('margin-bottom', 12px);
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(575){
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    &__input{
+        @include res('width', 343px);
+        @include res('font-size', 16px);
+        @include res('line-height', 28.5px);
+        font-style: normal;
+        font-weight: 400;
+        @include res('padding-top', 11px);
+        @include res('padding-bottom', 11px);
+        @include res('padding-right', 26px);
+        @include res('padding-left', 26px);
+        @include res('border-radius', 10px);
+        border:  solid #35B8EB;
+        @include res('border-radius', 15px);
+        @include res('border-width', 1.5px);
+        @include media(575){
+            @include resa('font-size', 12px);
+            width: 100%;
+            @include resa('padding', 11px);
+            @include resa('border-radius', 10px);
+            @include resa('border-width', 1.5px);
+        }
+        &::placeholder{
+            color: #8F8F8F;
+        }
+        &:not(:last-of-type){
+            @include res('margin-right', 17px);
+            @include media(575){
+                margin-right: 0;
+                @include resa('margin-bottom', 5px);
+            }
+        }
+    }
+    &__btn{
+        color: #FFF;
+        @include res('font-size', 18px);
+        @include res('line-height', 21px);
+        font-style: normal;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('height', 51px);
+        @include res('width', 265px);
+        @include res('padding-top', 15px);
+        @include res('padding-bottom', 15px);
+        @include res('padding-right', 100px);
+        @include res('padding-left', 100px);
+        @include res('border-radius', 30px);
+        background: #35B8EB;
+        @include res('margin-left', 34px);
+        transition: 300ms ease;
+        @include media(575){
+            @include resa('height', 39px);
+            width: 100%;
+            @include resa('font-size', 14px);
+            margin-left: 0;
+            @include resa('margin-top', 26px);
+            @include resa('border-radius', 26px);
+        }
+        &:hover{
+            background: #70D6FE;
+        }
+        &:active{
+            background: #0DA5E0;
         }
     }
 }
