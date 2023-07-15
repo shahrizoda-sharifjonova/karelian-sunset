@@ -328,7 +328,7 @@
           align-items: center;
 }
 
-.header__li:not(:last-of-type) {
+.header__li:not(:nth-child(3)) {
   margin-right: 2.2395833333vw;
 }
 
@@ -3858,6 +3858,106 @@
   margin-bottom: 3.3854166667vw;
 }
 
+.info__top {
+  margin-bottom: 1.1979166667vw;
+}
+
+.info__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.8333333333vw;
+  margin-bottom: 2.5vw;
+}
+
+.info__gallery-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 0.9375vw;
+     -moz-column-gap: 0.9375vw;
+          column-gap: 0.9375vw;
+  row-gap: 0.8333333333vw;
+}
+
+.info__gallery-item {
+  position: relative;
+  border-radius: 1.0416666667vw;
+  overflow: hidden;
+  line-height: 0;
+  width: 19.1666666667vw;
+  height: 13.8020833333vw;
+  display: block;
+}
+
+.info__gallery-item.big {
+  width: 34.7395833333vw;
+  min-width: 34.7395833333vw;
+  height: 28.4375vw;
+}
+
+.info__gallery-item.big svg {
+  width: 5.8333333333vw;
+  height: 5.625vw;
+}
+
+.info__gallery-item svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.21875vw;
+  height: 4.0625vw;
+}
+
+.info__gallery-item img {
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+.info__p {
+  color: #000;
+  text-align: center;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+  margin-bottom: 2.4479166667vw;
+  max-width: 56.09375vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.0208333333vw;
+}
+
+.info__span {
+  color: #000;
+  font-size: 1.0416666667vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4583333333vw;
+}
+
+.info__span span {
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -4782,6 +4882,10 @@ ul {
     border-width: 0.625vw;
   }
 
+  .info__gallery {
+    display: none;
+  }
+
   .container {
     max-width: 107.8125vw;
     padding-right: 4.6875vw;
@@ -4850,7 +4954,7 @@ ul {
     display: flex;
   }
 
-  .header__li:not(:last-of-type) {
+  .header__li:not(:nth-child(3)) {
     margin-right: 0;
     margin-bottom: 7.5vw;
   }
