@@ -1,0 +1,24 @@
+mixin rent()
+    .rent 
+        .rent__body.container 
+            h2.rent__title Стоимость аренды:
+            .rent__infos    
+                .rent__info 
+                    p.rent__text «высокий» сезон:
+                    p.rent__price 12000 руб./сутки
+                .rent__info 
+                    p.rent__text «низкий» сезон:
+                    p.rent__price 9000 руб./сутки
+            .rent__times    
+                .rent__time 
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="10" stroke="#35B8EB" stroke-width="2"/>
+                        <path d="M10.5601 5.28003V12.0384L14.9601 15.84" stroke="#35B8EB" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    | Время заезда: #[span 15:00]
+                .rent__time 
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="10" stroke="#35B8EB" stroke-width="2"/>
+                        <path d="M10.5601 5.28003V12.0384L14.9601 15.84" stroke="#35B8EB" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    | Время заезда: #[span 12:00]
