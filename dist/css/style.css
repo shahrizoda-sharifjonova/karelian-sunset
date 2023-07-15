@@ -2515,6 +2515,12 @@
 
 .faq {
   padding-top: 0.8333333333vw;
+  position: relative;
+  z-index: 5;
+}
+
+.faq_2 {
+  padding-top: 7.1875vw;
 }
 
 .faq_2 .faq__content {
@@ -4213,6 +4219,36 @@
   font-style: normal;
   font-weight: 500;
   line-height: 8.75vw;
+}
+
+.bron {
+  background: #EAF7FC;
+  padding-top: 3.0208333333vw;
+  padding-bottom: 3.0208333333vw;
+}
+
+.bron__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25vw;
+  color: #000;
+  font-size: 1.8229166667vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.09375vw;
+  text-transform: uppercase;
+}
+
+.bron__title svg {
+  width: 4.375vw;
+  height: 4.375vw;
 }
 
 * {

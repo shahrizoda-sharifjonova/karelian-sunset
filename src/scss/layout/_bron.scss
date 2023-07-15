@@ -1,0 +1,21 @@
+.bron{
+    background: #EAF7FC;
+    @include res('padding-top', 58px);
+    @include res('padding-bottom', 58px);
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 24px);
+        color: #000;
+        @include res('font-size', 35px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        svg{
+            @include res('width', 84px);
+            @include res('height', 84px);
+        }
+    }
+}

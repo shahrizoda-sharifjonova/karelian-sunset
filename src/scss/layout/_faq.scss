@@ -1,9 +1,12 @@
 .faq{
     @include res('padding-top', 16px);
+    position: relative;
+    z-index: 5;
     @include media(576){
         @include resa('padding-top', 40px);
     }
     &_2{
+        @include res('padding-top', 138px);
         .faq__content{
             width: 100%;
         }
