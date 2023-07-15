@@ -9,16 +9,41 @@ mixin rent()
                 .rent__info 
                     p.rent__text «низкий» сезон:
                     p.rent__price 9000 руб./сутки
-            .rent__times    
+            .rent__times 
+                <svg class="enable-sm" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="10" stroke="#35B8EB" stroke-width="2"/>
+                    <path d="M10.5601 5.28003V12.0384L14.9601 15.84" stroke="#35B8EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>   
                 .rent__time 
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11" cy="11" r="10" stroke="#35B8EB" stroke-width="2"/>
-                        <path d="M10.5601 5.28003V12.0384L14.9601 15.84" stroke="#35B8EB" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
                     | Время заезда: #[span 15:00]
                 .rent__time 
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="11" cy="11" r="10" stroke="#35B8EB" stroke-width="2"/>
-                        <path d="M10.5601 5.28003V12.0384L14.9601 15.84" stroke="#35B8EB" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
                     | Время заезда: #[span 12:00]
+            .rent__content 
+                .rent__item 
+                    .rent__img
+                        img(src="@img/rent-img-1.svg", alt="" draggable="false")
+                    .rent__right
+                        p.rent__subtitle 
+                            | Проживание с животными:
+                        p.rent__desc размещение с домашними животными допускается
+                .rent__item 
+                    .rent__img.second
+                        img(src="@img/rent-img-2.svg", alt="" draggable="false")
+                    .rent__right
+                        p.rent__subtitle 
+                            | Отмена бронирования:
+                        p.rent__desc БЕСПЛАТНАЯ отмена бронирования за 30 дней
+                .rent__item 
+                    .rent__img.third
+                        img(src="@img/rent-img-3.svg", alt="" draggable="false")
+                    .rent__right
+                        p.rent__subtitle 
+                            | Число гостей:
+                        p.rent__desc Взрослые: 5 Дети: 1
+                .rent__item 
+                    .rent__img.fourth
+                        img(src="@img/rent-img-4.svg", alt="" draggable="false")
+                    .rent__right
+                        p.rent__subtitle 
+                            | Страховой залог
+                        p.rent__desc При заселении нужно внести залог 5000 руб.
