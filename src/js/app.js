@@ -126,15 +126,32 @@ lefts.forEach(left=>{
     })
 })
 
-const tabSwiper = new Swiper(".tabs__item-swiper", {
+new Swiper(".tabs__item-swiper", {
     grabCursor: true,
-    modules: [Navigation,Pagination],
+    modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 0,
     watchSlidesProgress: true,
     navigation:{
         prevEl: '.tabs__btn-prev',
         nextEl: '.tabs__btn-next',
+    },
+}); 
+
+new Swiper(".reviews__swiper", {
+    grabCursor: true,
+    modules: [Navigation,Pagination],
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    watchSlidesProgress: true,
+    navigation:{
+        prevEl: '.reviews__navigation-prev',
+        nextEl: '.reviews__navigation-next',
+    },
+    pagination:{
+        el: '.reviews__pagination',
+        clickable: true,
     },
 }); 
 

@@ -1,5 +1,5 @@
 .faq{
-    @include res('padding-top', 77px);
+    @include res('padding-top', 16px);
     @include media(576){
         @include resa('padding-top', 40px);
     }

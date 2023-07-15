@@ -1,0 +1,326 @@
+.reviews{
+    position: relative;
+    @include res('margin-top', -87px);
+    @include res('padding-top', 300px);
+    @include res('padding-bottom', 200px);
+    background: url('../img/reviews-bg.png') center top / cover no-repeat;
+    @include media(576){
+        @include resa('margin-top', -19px);
+        @include resa('padding-top', 42px);
+        @include resa('padding-bottom', 38px);
+        isolation: isolate;
+        background: none !important;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        @include res('height', 137px);
+        background: linear-gradient(360deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        @include media(576){
+            background: url('../img/reviews-bg.png') center top / cover no-repeat;
+            z-index: -1;
+            bottom: auto;
+            top: 0;
+            @include resa('height', 360px);
+        }
+    }
+    &__title{
+        color: #000;
+        @include res('font-size', 36px);
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        text-transform: uppercase;
+        @include res('margin-bottom', 70px);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(576){
+            flex-direction: column;
+            align-items: center;
+            @include resa('font-size', 20px);
+            @include resa('line-height', 21px);
+            @include resa('margin-bottom', 120px);
+        }
+        span{
+            @include res('margin-left', 16px);
+            @include res('padding-right', 93px);
+            @include res('padding-left', 25px);
+            @include res('padding-top', 24px);
+            @include res('padding-bottom', 24px);
+            display: block;
+            @include res('border-radius', 40px);
+            background: #49C0EE;
+            color: #fff;
+            position: relative;
+            @include media(576){
+                @include resa('margin-top', 11px);
+                @include resa('margin-left', 0px);
+                @include resa('border-radius', 40px);
+                @include resa('padding-right', 52px);
+                @include resa('padding-left', 58px);
+                @include resa('padding-top', 12px);
+                @include resa('padding-bottom', 12px);
+            }
+            img{
+                position: absolute;
+                @include res('bottom', 6px);
+                @include res('right', 8px);
+                @include res('width', 73px);
+                @include res('height', 73px);
+                @include media(576){
+                    @include resa('bottom', -1px);
+                    @include resa('right', -16px);
+                    @include resa('width', 55px);
+                    @include resa('height', 55px);
+                }
+            }
+        }
+    }
+    &__slider{
+        position: relative;
+        @include media(576){
+            @include resa('margin-left', -15px);
+            @include resa('width', 320px);
+        }
+    }
+    &__swiper{
+        margin-left: auto;
+        margin-right: auto;
+        @include res('width', 807px);
+        overflow: hidden;
+        @include res('border-radius', 50px);
+        @include media(576){
+            width: 100%;
+            @include resa('border-radius', 15px);
+        }
+    }
+    &__wrapper{
+        display: flex;
+        width: max-content;
+    }
+    &__slide{
+        @include res('border-radius', 50px);
+        background: #EAF7FC;
+        @include res('padding-top', 46px);
+        @include res('padding-bottom', 50px);
+        @include res('padding-left', 110px);
+        @include res('padding-right', 60px);
+        position: relative;
+        @include media(576){
+            @include resa('padding-top', 14px);
+            @include resa('padding-bottom', 57px);
+            @include resa('padding-left', 20px);
+            @include resa('padding-right', 29px);
+            @include resa('border-radius', 15px);
+        }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            @include res('margin-bottom', 38px);
+            @include media(576){
+                flex-wrap: wrap;
+                @include resa('column-gap', 27px);
+                justify-content: center;
+                @include resa('margin-bottom', 30px);
+            }
+        }
+        &-info{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @include res('gap', 20px);
+            @include media(576){
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        &-name{
+            color: #000;
+            @include res('font-size', 20px);
+            font-style: normal;
+            font-weight: 600;
+            @include res('line-height', 28px);
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 28px);
+                @include resa('margin-bottom', 16px);
+            }
+        }
+        &-date{
+            color: #5A5A5A;
+            @include res('font-size', 15px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 28px);
+            @include media(576){
+                @include resa('font-size', 14px);
+                @include resa('line-height', 28px);
+            }
+            &.lg{
+                @include media(576){
+                    display: none;
+                }
+            }
+            &.sm{
+                display: none;
+                @include media(576){
+                    display: block;
+                }
+            }
+        }
+        &-rating{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include res('gap', 2px);
+            @include media(576){
+                @include resa('gap', 2px);
+            }
+            svg{
+                @include res('width', 26px);
+                @include res('height', 25px);
+                @include media(576){
+                    @include resa('width', 19px);
+                    @include resa('height', 18px);
+                }
+            }
+        }
+        &-p{
+            color: #000;
+            @include res('font-size', 20px);
+            font-style: normal;
+            font-weight: 400;
+            @include res('line-height', 28px);
+            @include res('max-width', 581px);
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('line-height', 24px);
+                @include resa('max-width', 270px);
+                text-align: center;
+            }
+        }
+    }
+    &__svg{
+        &-1{
+            position: absolute;
+            @include res('left', 60px);
+            @include res('top', 92px);
+            @include res('width', 33px);
+            @include res('height', 25px);
+            @include media(576){
+                @include resa('left', 20px);
+                @include resa('top', 93px);
+                @include resa('width', 24px);
+                @include resa('height', 18px);
+            }
+            svg,img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-2{
+            position: absolute;
+            @include res('right', 60px);
+            @include res('bottom', 45px);
+            @include res('width', 33px);
+            @include res('height', 25px);
+            @include media(576){
+                @include resa('right', 20px);
+                @include resa('bottom', 21px);
+                @include resa('width', 24px);
+                @include resa('height', 18px);
+            }
+            svg,img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__navigation{
+        position: absolute;
+        @include res('width', 1440px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        @include media(576){
+            @include resa('width', 90px);
+            @include resa('height', 33px);
+            transform: translateY(0);
+            @include resa('top', -49px);
+            transform: translateX(-50%);
+            left: 50%;
+        }
+        &-prev{
+            cursor: pointer;
+            pointer-events: all;
+            @include res('width', 43px);
+            @include res('height', 43px);
+            @include media(576){
+                @include resa('width', 33px);
+                @include resa('height', 33px);
+            }
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-next{
+            cursor: pointer;
+            pointer-events: all;
+            @include res('width', 43px);
+            @include res('height', 43px);
+            @include media(576){
+                @include resa('width', 33px);
+                @include resa('height', 33px);
+            }
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__pagination{
+        position: absolute;
+        @include res('bottom', -130px);
+        @include res('height', 14px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 20px);
+        z-index: 5;
+        @include media(576){
+            @include resa('bottom', -38px);
+            @include resa('height', 14px);
+            @include resa('gap', 14px);
+        }
+        .swiper-pagination-bullet{
+            @include res('width', 14px);
+            @include res('height', 14px);
+            border: solid #49C0EE;
+            border-radius: 50%;
+            @include res('border-width', 2px);
+            cursor: pointer;
+            @include media(576){
+                @include resa('width', 14px);
+                @include resa('height', 14px);
+                @include resa('border-width', 2px);
+            }
+            &-active{
+                background: #35B8EB;
+            }
+        }
+    }
+}
