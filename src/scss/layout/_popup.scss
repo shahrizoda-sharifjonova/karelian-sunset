@@ -36,6 +36,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media(576){
+            width: 90%;
+            @include resa('border-radius', 20px);
+            @include resa('padding', 20px);
+        }
     }
     &__close{
         position: absolute;
@@ -43,6 +48,12 @@
         @include res('right', 27px);
         @include res('width', 14px);
         @include res('height', 14px);
+        @include media(576){
+            @include resa('top', 24px);
+            @include resa('right', 20px);
+            @include resa('width', 14px);
+            @include resa('height', 14px);
+        }
         svg{
             width: 100%;
             height: 100%;
@@ -59,9 +70,19 @@
         font-weight: 400;
         line-height: 124.4%;
         @include res('margin-bottom', 30px);
+        @include media(576){
+            @include resa('gap', 10px);
+            @include resa('font-size', 18px);
+            @include resa('margin-bottom', 20px);
+        }
         svg{
             @include res('width', 24px);
             @include res('height', 24px);
+            @include media(576){
+                @include resa('width', 20px);
+                @include resa('height', 20px);
+                display: none;
+            }
         }
     }
     &__form{
@@ -69,6 +90,10 @@
         flex-direction: column;
         align-items: center;
         @include res('gap', 13px);
+        @include media(576){
+            @include resa('gap', 10px);
+            width: 100%;
+        }
     }
     &__input{
         @include res('height', 44px);
@@ -84,6 +109,13 @@
         font-style: normal;
         font-weight: 400;
         line-height: 124.4%;
+        @include media(576){
+            @include resa('height', 40px);
+            @include resa('font-size', 14px);
+            @include resa('padding-left', 22px);
+            @include resa('border-radius', 10px);
+            width: 100%;
+        }
     }
     &__btn{
         @include res('padding-top', 12px);
@@ -102,17 +134,32 @@
         font-weight: 700;
         line-height: 124.4%;
         @include res('margin-bottom', 30px);
+        @include media(576){
+            @include resa('padding-top', 12px);
+            @include resa('padding-bottom', 12px);
+            @include resa('height', 40px);
+            width: 100%;
+            @include resa('border-radius', 10px);
+            @include resa('font-size', 14px);
+        }
     }
     &__row{
         display: flex;
         align-items: center;
         justify-content: center;
         @include res('gap', 14px);
+        @include media(576){
+            @include resa('gap', 10px);
+        }
     }
     &__chk{
         @include res('width', 14px);   
         @include res('height', 14px);  
         cursor: pointer; 
+        @include media(576){
+            @include resa('width', 14px);   
+            @include resa('height', 14px);  
+        }
     }
     &__label{
         color: #16333F;
@@ -120,6 +167,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 124.4%;
+        @include media(576){
+            @include resa('font-size', 12px);
+            @include resa('max-width', 145px);
+        }
         a{
             color: #35B8EB;
         }

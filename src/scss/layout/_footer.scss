@@ -257,7 +257,7 @@
                 @include resa('width', 30px);
                 @include resa('height', 30px);
             }
-            svg{
+            svg,img{
                 width: 100%;
                 height: 100%;
             }
