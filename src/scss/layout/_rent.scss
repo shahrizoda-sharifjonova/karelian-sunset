@@ -178,6 +178,8 @@
         &:first-of-type{
             @include media(575){
                 order: 2;
+                @include resa('margin-bottom', 0px);
+                @include resa('margin-top', 15px);
             }
         }
         &:nth-of-type(2){
