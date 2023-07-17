@@ -125,6 +125,7 @@
                 height: 100%;
                 flex: 1 1 auto;
                 border: none;
+                background: none;
             }
             svg{
                 @include res('margin-right', 10px);
@@ -134,6 +135,45 @@
                     @include resa('margin-right', 11px);
                     @include resa('width', 17.6px);
                     @include resa('height', 16px);
+                }
+            }
+            &-minus{
+                opacity: 0;
+                visibility: hidden;
+                transition: 300ms ease-out;
+                background: none;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                @include res('right', 50px);
+                @include res('font-size', 30px);
+                font-weight: 400;
+                color: #8F8F8F;
+                @include media(576){
+                    @include resa('font-size', 24px);
+                    @include resa('right', 50px);
+                }
+                &.active{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &-plus{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                @include res('right', 20px);
+                background: none;
+                border: none;
+                cursor: pointer;
+                @include res('font-size', 30px);
+                font-weight: 400;
+                color: #8F8F8F;
+                @include media(576){
+                    @include resa('font-size', 24px);
+                    @include resa('right', 20px);
                 }
             }
         }

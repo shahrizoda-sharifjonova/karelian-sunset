@@ -4319,12 +4319,53 @@
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   border: none;
+  background: none;
 }
 
 .bron__form-input svg {
   margin-right: 0.5208333333vw;
   width: 1.1458333333vw;
   height: 1.0416666667vw;
+}
+
+.bron__form-input-minus {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 2.6041666667vw;
+  font-size: 1.5625vw;
+  font-weight: 400;
+  color: #8F8F8F;
+}
+
+.bron__form-input-minus.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bron__form-input-plus {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1.0416666667vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5625vw;
+  font-weight: 400;
+  color: #8F8F8F;
 }
 
 .bron__form-btn {
@@ -5736,6 +5777,16 @@ input[type=number] {
     margin-right: 3.4375vw;
     width: 5.5vw;
     height: 5vw;
+  }
+
+  .bron__form-input-minus {
+    font-size: 7.5vw;
+    right: 15.625vw;
+  }
+
+  .bron__form-input-plus {
+    font-size: 7.5vw;
+    right: 6.25vw;
   }
 
   .bron__form-btn {

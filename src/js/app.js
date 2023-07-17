@@ -271,3 +271,41 @@ popupClose.forEach(el => {
         })
     })
 })
+
+
+if(document.querySelector('.bron__form-input')){
+    document.querySelectorAll('.bron__form-input').forEach(el => {
+        if(el.querySelector('.bron__form-input-plus')){
+            const input = el.querySelector('input')
+            const minus = el.querySelector('.bron__form-input-minus')
+            const plus = el.querySelector('.bron__form-input-plus')
+
+            plus.addEventListener('click', () => {
+                input.value++
+                console.log(input.value);
+                
+                if(input.value != 0){
+                    if(!minus.classList.contains('active')){
+                        minus.classList.add('active')
+                    }
+                }
+            })
+
+            minus.addEventListener('click', () => {
+                if(input.value >= 1){
+                    input.value--
+                }
+
+                if(input.value != 0){
+                    if(!minus.classList.contains('active')){
+                        minus.classList.add('active')
+                    }
+                }
+
+                if(input.value == 0) {
+                    minus.classList.remove('active')
+                }
+            })
+        }
+    })
+}
