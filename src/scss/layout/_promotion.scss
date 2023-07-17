@@ -3,7 +3,7 @@
     @include res('padding-bottom', 90px);
     background: linear-gradient(180deg, rgba(53, 184, 235, 0.80) 0%, rgba(254, 253, 251, 0.80) 100%);
     @include media(576){
-        @include resa('padding-top', 24px);
+        @include resa('padding-top', 40px);
         @include resa('padding-bottom', 133px);
     }
     &__title{

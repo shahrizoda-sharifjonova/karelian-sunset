@@ -5,7 +5,7 @@
     @include res('padding-bottom', 200px);
     background: url('../img/reviews-bg.png') center top / cover no-repeat;
     @include media(576){
-        @include resa('margin-top', -19px);
+        margin-top: 0;
         @include resa('padding-top', 42px);
         @include resa('padding-bottom', 38px);
         isolation: isolate;

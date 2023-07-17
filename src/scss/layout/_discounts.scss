@@ -7,8 +7,8 @@
     @include res('padding-bottom', 132px);
     @include res('margin-top', 138px);
     @include media(575){
-        @include resa('padding-top', 27px);
-        @include resa('padding-bottom', 37px);
+        @include resa('padding-top', 40px);
+        @include resa('padding-bottom', 40px);
         @include resa('margin-top', 44px);
     }
     &::before{

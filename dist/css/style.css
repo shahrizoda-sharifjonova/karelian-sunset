@@ -5206,7 +5206,7 @@ input[type=number] {
   }
 
   .promotion {
-    padding-top: 7.5vw;
+    padding-top: 12.5vw;
     padding-bottom: 41.5625vw;
   }
 
@@ -5291,7 +5291,7 @@ input[type=number] {
   }
 
   .reviews {
-    margin-top: -5.9375vw;
+    margin-top: 0;
     padding-top: 13.125vw;
     padding-bottom: 11.875vw;
     isolation: isolate;
@@ -6752,8 +6752,8 @@ input[type=number] {
   }
 
   .discounts {
-    padding-top: 8.4375vw;
-    padding-bottom: 11.5625vw;
+    padding-top: 12.5vw;
+    padding-bottom: 12.5vw;
     margin-top: 13.75vw;
   }
 
