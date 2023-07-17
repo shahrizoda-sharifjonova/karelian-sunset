@@ -724,9 +724,12 @@
 .intro__img {
   width: 2.2395833333vw;
   margin-right: 0.9375vw;
+  line-height: 0;
 }
 
 .intro__img img {
+  line-height: 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -4784,7 +4787,7 @@ input[type=number] {
   }
 
   .intro__img {
-    width: 8.75vw;
+    width: 11.25vw;
   }
 
   .intro__p {

@@ -33,10 +33,13 @@
     &__img{
         @include res('width', 43px);
         @include res('margin-right', 18px);
+        line-height: 0;
         @include media(576){
-            @include resa('width', 28px);
+            @include resa('width', 36px);
         }
         img{
+            line-height: 0;
+            height: 100%;
             width: 100%;
         }
     }
